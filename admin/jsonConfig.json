@@ -421,138 +421,781 @@
           "lg": 12,
           "xl": 12
         },
-        "_profileTable": {
-          "type": "table",
-          "label": "",
-          "noDelete": true,
-          "noAdd": true,
+        "_r0c0": {
+          "type": "staticText",
+          "text": "Profile",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {
+            "fontWeight": "bold",
+            "borderBottom": "1px solid #555",
+            "paddingBottom": "4px"
+          }
+        },
+        "_r0c1": {
+          "type": "staticText",
+          "text": "Humidity %",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {
+            "fontWeight": "bold",
+            "borderBottom": "1px solid #555",
+            "paddingBottom": "4px"
+          }
+        },
+        "_r0c2": {
+          "type": "staticText",
+          "text": "Temperature",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {
+            "fontWeight": "bold",
+            "borderBottom": "1px solid #555",
+            "paddingBottom": "4px"
+          }
+        },
+        "_r0c3": {
+          "type": "staticText",
+          "text": "Watering",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {
+            "fontWeight": "bold",
+            "borderBottom": "1px solid #555",
+            "paddingBottom": "4px"
+          }
+        },
+        "_r1c0": {
+          "type": "staticText",
+          "text": "Ficus",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r1c1": {
+          "type": "staticText",
+          "text": "40-70%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r1c2": {
+          "type": "staticText",
+          "text": "18-25°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r1c3": {
+          "type": "staticText",
+          "text": "7 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div1": {
+          "type": "divider",
           "xs": 12,
           "sm": 12,
           "md": 12,
           "lg": 12,
-          "xl": 12,
-          "default": [
-            {
-              "profile": "Ficus",
-              "humidity": "40–70%",
-              "temperature": "18–25°C",
-              "watering": "7"
-            },
-            {
-              "profile": "Orchid",
-              "humidity": "50–70%",
-              "temperature": "18–25°C",
-              "watering": "10"
-            },
-            {
-              "profile": "Cactus",
-              "humidity": "10–30%",
-              "temperature": "15–35°C",
-              "watering": "21"
-            },
-            {
-              "profile": "Monstera",
-              "humidity": "40–60%",
-              "temperature": "18–27°C",
-              "watering": "7"
-            },
-            {
-              "profile": "Fern",
-              "humidity": "60–80%",
-              "temperature": "15–22°C",
-              "watering": "3"
-            },
-            {
-              "profile": "Succulent",
-              "humidity": "10–30%",
-              "temperature": "15–30°C",
-              "watering": "14"
-            },
-            {
-              "profile": "Palm",
-              "humidity": "40–60%",
-              "temperature": "18–27°C",
-              "watering": "7"
-            },
-            {
-              "profile": "Pothos",
-              "humidity": "40–60%",
-              "temperature": "15–27°C",
-              "watering": "7"
-            },
-            {
-              "profile": "Aloe Vera",
-              "humidity": "10–30%",
-              "temperature": "15–30°C",
-              "watering": "14"
-            },
-            {
-              "profile": "Peace Lily",
-              "humidity": "50–70%",
-              "temperature": "18–27°C",
-              "watering": "5"
-            },
-            {
-              "profile": "Coffea arabica",
-              "humidity": "60–80%",
-              "temperature": "18–27°C",
-              "watering": "7"
-            },
-            {
-              "profile": "Rhapis excelsa",
-              "humidity": "40–60%",
-              "temperature": "15–25°C",
-              "watering": "10"
-            },
-            {
-              "profile": "Calathea zebrina",
-              "humidity": "60–80%",
-              "temperature": "18–29°C",
-              "watering": "5"
-            },
-            {
-              "profile": "Sansevieria Laurentii",
-              "humidity": "10–40%",
-              "temperature": "16–27°C",
-              "watering": "21"
-            },
-            {
-              "profile": "Custom",
-              "humidity": "—",
-              "temperature": "—",
-              "watering": "—"
-            }
-          ],
-          "items": [
-            {
-              "type": "text",
-              "title": "Profile",
-              "attr": "profile",
-              "width": "30%",
-              "readOnly": true
-            },
-            {
-              "type": "text",
-              "title": "Humidity %",
-              "attr": "humidity",
-              "width": "25%",
-              "readOnly": true
-            },
-            {
-              "type": "text",
-              "title": "Temperature °C",
-              "attr": "temperature",
-              "width": "25%",
-              "readOnly": true
-            },
-            {
-              "type": "text",
-              "title": "Watering (days)",
-              "attr": "watering",
-              "width": "20%",
-              "readOnly": true
-            }
-          ]
+          "xl": 12
+        },
+        "_r2c0": {
+          "type": "staticText",
+          "text": "Orchid",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r2c1": {
+          "type": "staticText",
+          "text": "50-70%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r2c2": {
+          "type": "staticText",
+          "text": "18-25°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r2c3": {
+          "type": "staticText",
+          "text": "10 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div2": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r3c0": {
+          "type": "staticText",
+          "text": "Cactus",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r3c1": {
+          "type": "staticText",
+          "text": "10-30%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r3c2": {
+          "type": "staticText",
+          "text": "15-35°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r3c3": {
+          "type": "staticText",
+          "text": "21 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div3": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r4c0": {
+          "type": "staticText",
+          "text": "Monstera",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r4c1": {
+          "type": "staticText",
+          "text": "40-60%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r4c2": {
+          "type": "staticText",
+          "text": "18-27°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r4c3": {
+          "type": "staticText",
+          "text": "7 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div4": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r5c0": {
+          "type": "staticText",
+          "text": "Fern",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r5c1": {
+          "type": "staticText",
+          "text": "60-80%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r5c2": {
+          "type": "staticText",
+          "text": "15-22°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r5c3": {
+          "type": "staticText",
+          "text": "3 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div5": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r6c0": {
+          "type": "staticText",
+          "text": "Succulent",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r6c1": {
+          "type": "staticText",
+          "text": "10-30%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r6c2": {
+          "type": "staticText",
+          "text": "15-30°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r6c3": {
+          "type": "staticText",
+          "text": "14 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div6": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r7c0": {
+          "type": "staticText",
+          "text": "Palm",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r7c1": {
+          "type": "staticText",
+          "text": "40-60%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r7c2": {
+          "type": "staticText",
+          "text": "18-27°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r7c3": {
+          "type": "staticText",
+          "text": "7 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div7": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r8c0": {
+          "type": "staticText",
+          "text": "Pothos",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r8c1": {
+          "type": "staticText",
+          "text": "40-60%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r8c2": {
+          "type": "staticText",
+          "text": "15-27°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r8c3": {
+          "type": "staticText",
+          "text": "7 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div8": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r9c0": {
+          "type": "staticText",
+          "text": "Aloe Vera",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r9c1": {
+          "type": "staticText",
+          "text": "10-30%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r9c2": {
+          "type": "staticText",
+          "text": "15-30°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r9c3": {
+          "type": "staticText",
+          "text": "14 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div9": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r10c0": {
+          "type": "staticText",
+          "text": "Peace Lily",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r10c1": {
+          "type": "staticText",
+          "text": "50-70%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r10c2": {
+          "type": "staticText",
+          "text": "18-27°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r10c3": {
+          "type": "staticText",
+          "text": "5 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div10": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r11c0": {
+          "type": "staticText",
+          "text": "Coffea arabica",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r11c1": {
+          "type": "staticText",
+          "text": "60-80%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r11c2": {
+          "type": "staticText",
+          "text": "18-27°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r11c3": {
+          "type": "staticText",
+          "text": "7 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div11": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r12c0": {
+          "type": "staticText",
+          "text": "Rhapis excelsa",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r12c1": {
+          "type": "staticText",
+          "text": "40-60%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r12c2": {
+          "type": "staticText",
+          "text": "15-25°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r12c3": {
+          "type": "staticText",
+          "text": "10 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div12": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r13c0": {
+          "type": "staticText",
+          "text": "Calathea zebrina",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r13c1": {
+          "type": "staticText",
+          "text": "60-80%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r13c2": {
+          "type": "staticText",
+          "text": "18-29°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r13c3": {
+          "type": "staticText",
+          "text": "5 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div13": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r14c0": {
+          "type": "staticText",
+          "text": "Sansevieria Laurentii",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r14c1": {
+          "type": "staticText",
+          "text": "10-40%",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r14c2": {
+          "type": "staticText",
+          "text": "16-27°C",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r14c3": {
+          "type": "staticText",
+          "text": "21 days",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div14": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
+        },
+        "_r15c0": {
+          "type": "staticText",
+          "text": "Custom",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r15c1": {
+          "type": "staticText",
+          "text": "—",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r15c2": {
+          "type": "staticText",
+          "text": "—",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_r15c3": {
+          "type": "staticText",
+          "text": "—",
+          "xs": 3,
+          "sm": 3,
+          "md": 3,
+          "lg": 3,
+          "xl": 3,
+          "style": {}
+        },
+        "_div15": {
+          "type": "divider",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
         }
       }
     }
