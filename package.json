@@ -1,6 +1,6 @@
 {
   "name": "iobroker.flowers",
-  "version": "0.2.0",
+  "version": "0.2.7",
   "description": "ioBroker adapter for monitoring indoor plants via soil moisture, temperature and battery sensors with Telegram notifications",
   "author": {
     "name": "sadam6752-tech",
