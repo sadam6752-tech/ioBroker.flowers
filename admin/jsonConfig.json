@@ -269,13 +269,13 @@
               "type": "text",
               "title": "Name",
               "attr": "name",
-              "width": "15%"
+              "width": "13%"
             },
             {
               "type": "text",
               "title": "Location",
               "attr": "location",
-              "width": "10%"
+              "width": "9%"
             },
             {
               "type": "select",
@@ -349,19 +349,19 @@
               "type": "objectId",
               "title": "Humidity Sensor",
               "attr": "sensorHumidity",
-              "width": "15%"
+              "width": "14%"
             },
             {
               "type": "objectId",
               "title": "Temperature Sensor",
               "attr": "sensorTemperature",
-              "width": "15%"
+              "width": "14%"
             },
             {
               "type": "objectId",
               "title": "Battery Sensor",
               "attr": "sensorBattery",
-              "width": "10%"
+              "width": "9%"
             },
             {
               "type": "text",
@@ -395,14 +395,14 @@
               "type": "text",
               "title": "Bat Min %",
               "attr": "batteryMin",
-              "width": "5%",
+              "width": "7%",
               "placeholder": "—"
             },
             {
               "type": "checkbox",
               "title": "Enabled",
               "attr": "enabled",
-              "width": "5%"
+              "width": "4%"
             }
           ]
         }
