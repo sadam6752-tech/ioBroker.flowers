@@ -22,8 +22,20 @@ class FlowersAdapter extends utils.Adapter {
   async onReady() {
     this.log.info("flowers adapter starting...");
 
-    this.notif = new NotificationManager(this);
-    this.monitor = new MonitorService(this, this.notif);
+    // Read system language
+    let lang = "en";
+    try {
+      const sysConfig = await this.getForeignObjectAsync("system.config");
+      if (sysConfig && sysConfig.common && sysConfig.common.language) {
+        lang = sysConfig.common.language;
+      }
+    } catch {
+      // fallback to en
+    }
+    this.log.debug(`flowers: system language = ${lang}`);
+
+    this.notif = new NotificationManager(this, lang);
+    this.monitor = new MonitorService(this, this.notif, lang);
 
     // Subscribe to sensor states
     await this.monitor.subscribeAll();
