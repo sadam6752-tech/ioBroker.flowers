@@ -14,7 +14,7 @@
         "telegramInstance": {
           "type": "instance",
           "label": "Telegram Instance",
-          "filter": "telegram",
+          "adapter": "telegram",
           "default": "0",
           "xs": 12, "sm": 6, "md": 4, "lg": 4, "xl": 4
         },
