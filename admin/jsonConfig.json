@@ -364,34 +364,39 @@
               "width": "10%"
             },
             {
-              "type": "number",
+              "type": "text",
               "title": "Hum Min %",
               "attr": "humidityMin",
-              "width": "5%"
+              "width": "5%",
+              "placeholder": "—"
             },
             {
-              "type": "number",
+              "type": "text",
               "title": "Hum Max %",
               "attr": "humidityMax",
-              "width": "5%"
+              "width": "5%",
+              "placeholder": "—"
             },
             {
-              "type": "number",
+              "type": "text",
               "title": "Temp Min",
               "attr": "temperatureMin",
-              "width": "5%"
+              "width": "5%",
+              "placeholder": "—"
             },
             {
-              "type": "number",
+              "type": "text",
               "title": "Temp Max",
               "attr": "temperatureMax",
-              "width": "5%"
+              "width": "5%",
+              "placeholder": "—"
             },
             {
-              "type": "number",
+              "type": "text",
               "title": "Bat Min %",
               "attr": "batteryMin",
-              "width": "5%"
+              "width": "5%",
+              "placeholder": "—"
             },
             {
               "type": "checkbox",
