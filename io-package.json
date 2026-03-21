@@ -157,6 +157,19 @@
         "def": 0
       },
       "native": {}
+    },
+    {
+      "_id": "notifications.sendDailyReport",
+      "type": "state",
+      "common": {
+        "role": "button",
+        "name": "Send daily report now",
+        "type": "boolean",
+        "read": true,
+        "write": true,
+        "def": false
+      },
+      "native": {}
     }
   ]
 }

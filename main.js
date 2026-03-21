@@ -40,6 +40,9 @@ class FlowersAdapter extends utils.Adapter {
     // Subscribe to sensor states
     await this.monitor.subscribeAll();
 
+    // Subscribe to control states
+    await this.subscribeStatesAsync("notifications.sendDailyReport");
+
     // Set connection indicator
     await this.setStateAsync("info.connection", { val: true, ack: true });
 
@@ -72,6 +75,15 @@ class FlowersAdapter extends utils.Adapter {
     if (!state || state.val === null || state.val === undefined) {
       return;
     }
+
+    // Test button: send daily report immediately
+    if (id === `${this.namespace}.notifications.sendDailyReport` && state.val === true && !state.ack) {
+      this.log.info("flowers: manual daily report triggered");
+      await this.notif.sendDailyReport(this.monitor.getPlantStates());
+      await this.setStateAsync("notifications.sendDailyReport", { val: false, ack: true });
+      return;
+    }
+
     await this.monitor.onStateChange(id, state);
   }
 
