@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.2.7",
+    "version": "0.2.8",
     "news": {
+      "0.2.8": {
+        "en": "Added sendWeeklyReport button; fixed repochecker issues",
+        "de": "Schaltflaeche sendWeeklyReport hinzugefuegt; Repochecker-Fehler behoben",
+        "ru": "Добавлена кнопка sendWeeklyReport; исправлены ошибки repochecker",
+        "fr": "Bouton sendWeeklyReport ajoute; erreurs repochecker corrigees",
+        "it": "Aggiunto pulsante sendWeeklyReport; corretti errori repochecker",
+        "es": "Boton sendWeeklyReport anadido; errores repochecker corregidos",
+        "pl": "Dodano przycisk sendWeeklyReport; naprawiono bledy repochecker",
+        "pt": "Botao sendWeeklyReport adicionado; erros repochecker corrigidos",
+        "nl": "Knop sendWeeklyReport toegevoegd; repochecker fouten opgelost",
+        "uk": "Додано кнопку sendWeeklyReport; виправлено помилки repochecker",
+        "zh-cn": "添加sendWeeklyReport按钮；修复repochecker问题"
+      },
       "0.2.7": {
         "en": "Fixed weekly report header; separated daily/weekly report logic",
         "de": "Wochenbericht-Kopfzeile korrigiert; Tages-/Wochenbericht-Logik getrennt",
@@ -80,19 +93,6 @@
         "nl": "Lege drempelwaarde velden toegestaan — profielwaarden als terugval gebruikt",
         "uk": "Дозволено порожні поля порогів — значення профілю використовуються як запасні",
         "zh-cn": "允许空阈值字段 — 使用配置文件值作为后备"
-      },
-      "0.2.0": {
-        "en": "Added 4 new plant profiles; added translations for all 11 languages",
-        "de": "4 neue Pflanzenprofile hinzugefügt; Übersetzungen für alle 11 Sprachen ergänzt",
-        "ru": "Добавлены 4 новых профиля растений; добавлены переводы на все 11 языков",
-        "fr": "4 nouveaux profils de plantes ajoutés; traductions pour les 11 langues ajoutées",
-        "it": "Aggiunti 4 nuovi profili di piante; aggiunte traduzioni per tutte le 11 lingue",
-        "es": "Añadidos 4 nuevos perfiles de plantas; traducciones para los 11 idiomas añadidas",
-        "pl": "Dodano 4 nowe profile roślin; dodano tłumaczenia dla wszystkich 11 języków",
-        "pt": "Adicionados 4 novos perfis de plantas; traduções para todos os 11 idiomas adicionadas",
-        "nl": "4 nieuwe plantenprofielen toegevoegd; vertalingen voor alle 11 talen toegevoegd",
-        "uk": "Додано 4 нових профілі рослин; додано переклади для всіх 11 мов",
-        "zh-cn": "新增4个植物配置文件；新增所有11种语言翻译"
       }
     },
     "titleLang": {
@@ -157,7 +157,7 @@
     ],
     "globalDependencies": [
       {
-        "admin": ">=7.6.17"
+        "admin": ">=7.6.20"
       }
     ],
     "tier": 3
@@ -229,6 +229,19 @@
       "common": {
         "role": "button",
         "name": "Send daily report now",
+        "type": "boolean",
+        "read": true,
+        "write": true,
+        "def": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "notifications.sendWeeklyReport",
+      "type": "state",
+      "common": {
+        "role": "button",
+        "name": "Send weekly report now",
         "type": "boolean",
         "read": true,
         "write": true,

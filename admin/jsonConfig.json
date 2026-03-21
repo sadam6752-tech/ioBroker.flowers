@@ -29,10 +29,10 @@
           "placeholder": "user1,user2",
           "default": "",
           "xs": 12,
-          "sm": 6,
-          "md": 8,
-          "lg": 8,
-          "xl": 8
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
         },
         "_monitorHeader": {
           "type": "header",
@@ -424,7 +424,7 @@
         "_r0c0": {
           "type": "staticText",
           "text": "Profile",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -438,7 +438,7 @@
         "_r0c1": {
           "type": "staticText",
           "text": "Humidity %",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -452,7 +452,7 @@
         "_r0c2": {
           "type": "staticText",
           "text": "Temperature",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -466,7 +466,7 @@
         "_r0c3": {
           "type": "staticText",
           "text": "Watering",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -480,7 +480,7 @@
         "_r1c0": {
           "type": "staticText",
           "text": "Ficus",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -490,7 +490,7 @@
         "_r1c1": {
           "type": "staticText",
           "text": "40-70%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -500,7 +500,7 @@
         "_r1c2": {
           "type": "staticText",
           "text": "18-25°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -510,7 +510,7 @@
         "_r1c3": {
           "type": "staticText",
           "text": "7 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -528,7 +528,7 @@
         "_r2c0": {
           "type": "staticText",
           "text": "Orchid",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -538,7 +538,7 @@
         "_r2c1": {
           "type": "staticText",
           "text": "50-70%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -548,7 +548,7 @@
         "_r2c2": {
           "type": "staticText",
           "text": "18-25°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -558,7 +558,7 @@
         "_r2c3": {
           "type": "staticText",
           "text": "10 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -576,7 +576,7 @@
         "_r3c0": {
           "type": "staticText",
           "text": "Cactus",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -586,7 +586,7 @@
         "_r3c1": {
           "type": "staticText",
           "text": "10-30%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -596,7 +596,7 @@
         "_r3c2": {
           "type": "staticText",
           "text": "15-35°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -606,7 +606,7 @@
         "_r3c3": {
           "type": "staticText",
           "text": "21 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -624,7 +624,7 @@
         "_r4c0": {
           "type": "staticText",
           "text": "Monstera",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -634,7 +634,7 @@
         "_r4c1": {
           "type": "staticText",
           "text": "40-60%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -644,7 +644,7 @@
         "_r4c2": {
           "type": "staticText",
           "text": "18-27°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -654,7 +654,7 @@
         "_r4c3": {
           "type": "staticText",
           "text": "7 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -672,7 +672,7 @@
         "_r5c0": {
           "type": "staticText",
           "text": "Fern",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -682,7 +682,7 @@
         "_r5c1": {
           "type": "staticText",
           "text": "60-80%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -692,7 +692,7 @@
         "_r5c2": {
           "type": "staticText",
           "text": "15-22°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -702,7 +702,7 @@
         "_r5c3": {
           "type": "staticText",
           "text": "3 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -720,7 +720,7 @@
         "_r6c0": {
           "type": "staticText",
           "text": "Succulent",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -730,7 +730,7 @@
         "_r6c1": {
           "type": "staticText",
           "text": "10-30%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -740,7 +740,7 @@
         "_r6c2": {
           "type": "staticText",
           "text": "15-30°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -750,7 +750,7 @@
         "_r6c3": {
           "type": "staticText",
           "text": "14 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -768,7 +768,7 @@
         "_r7c0": {
           "type": "staticText",
           "text": "Palm",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -778,7 +778,7 @@
         "_r7c1": {
           "type": "staticText",
           "text": "40-60%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -788,7 +788,7 @@
         "_r7c2": {
           "type": "staticText",
           "text": "18-27°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -798,7 +798,7 @@
         "_r7c3": {
           "type": "staticText",
           "text": "7 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -816,7 +816,7 @@
         "_r8c0": {
           "type": "staticText",
           "text": "Pothos",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -826,7 +826,7 @@
         "_r8c1": {
           "type": "staticText",
           "text": "40-60%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -836,7 +836,7 @@
         "_r8c2": {
           "type": "staticText",
           "text": "15-27°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -846,7 +846,7 @@
         "_r8c3": {
           "type": "staticText",
           "text": "7 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -864,7 +864,7 @@
         "_r9c0": {
           "type": "staticText",
           "text": "Aloe Vera",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -874,7 +874,7 @@
         "_r9c1": {
           "type": "staticText",
           "text": "10-30%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -884,7 +884,7 @@
         "_r9c2": {
           "type": "staticText",
           "text": "15-30°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -894,7 +894,7 @@
         "_r9c3": {
           "type": "staticText",
           "text": "14 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -912,7 +912,7 @@
         "_r10c0": {
           "type": "staticText",
           "text": "Peace Lily",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -922,7 +922,7 @@
         "_r10c1": {
           "type": "staticText",
           "text": "50-70%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -932,7 +932,7 @@
         "_r10c2": {
           "type": "staticText",
           "text": "18-27°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -942,7 +942,7 @@
         "_r10c3": {
           "type": "staticText",
           "text": "5 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -960,7 +960,7 @@
         "_r11c0": {
           "type": "staticText",
           "text": "Coffea arabica",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -970,7 +970,7 @@
         "_r11c1": {
           "type": "staticText",
           "text": "60-80%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -980,7 +980,7 @@
         "_r11c2": {
           "type": "staticText",
           "text": "18-27°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -990,7 +990,7 @@
         "_r11c3": {
           "type": "staticText",
           "text": "7 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1008,7 +1008,7 @@
         "_r12c0": {
           "type": "staticText",
           "text": "Rhapis excelsa",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1018,7 +1018,7 @@
         "_r12c1": {
           "type": "staticText",
           "text": "40-60%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1028,7 +1028,7 @@
         "_r12c2": {
           "type": "staticText",
           "text": "15-25°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1038,7 +1038,7 @@
         "_r12c3": {
           "type": "staticText",
           "text": "10 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1056,7 +1056,7 @@
         "_r13c0": {
           "type": "staticText",
           "text": "Calathea zebrina",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1066,7 +1066,7 @@
         "_r13c1": {
           "type": "staticText",
           "text": "60-80%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1076,7 +1076,7 @@
         "_r13c2": {
           "type": "staticText",
           "text": "18-29°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1086,7 +1086,7 @@
         "_r13c3": {
           "type": "staticText",
           "text": "5 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1104,7 +1104,7 @@
         "_r14c0": {
           "type": "staticText",
           "text": "Sansevieria Laurentii",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1114,7 +1114,7 @@
         "_r14c1": {
           "type": "staticText",
           "text": "10-40%",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1124,7 +1124,7 @@
         "_r14c2": {
           "type": "staticText",
           "text": "16-27°C",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1134,7 +1134,7 @@
         "_r14c3": {
           "type": "staticText",
           "text": "21 days",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1152,7 +1152,7 @@
         "_r15c0": {
           "type": "staticText",
           "text": "Custom",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1162,7 +1162,7 @@
         "_r15c1": {
           "type": "staticText",
           "text": "—",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1172,7 +1172,7 @@
         "_r15c2": {
           "type": "staticText",
           "text": "—",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
@@ -1182,7 +1182,7 @@
         "_r15c3": {
           "type": "staticText",
           "text": "—",
-          "xs": 3,
+          "xs": 12,
           "sm": 3,
           "md": 3,
           "lg": 3,
