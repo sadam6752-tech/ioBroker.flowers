@@ -9,6 +9,8 @@
   "Monitoring": "Мониторинг",
   "Check Interval": "Интервал проверки",
   "Max Messages per Day": "Макс. сообщений в день",
+  "Repeat Interval (min)": "Интервал повтора (мин.)",
+  "Repeat alert interval in minutes if threshold is still exceeded (0 = no repeat)": "Интервал повтора в минутах если порог всё ещё превышен (0 = без повтора)",
   "Offline Threshold (hours)": "Порог офлайн (часы)",
   "Night Mode": "Ночной режим",
   "Enable Night Mode": "Включить ночной режим",

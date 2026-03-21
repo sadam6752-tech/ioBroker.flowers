@@ -89,6 +89,7 @@
     "telegramUsers": "",
     "checkInterval": "60",
     "maxMessagesPerDay": 10,
+    "repeatInterval": 60,
     "offlineThreshold": 3,
     "nightModeEnabled": false,
     "nightModeStart": "22:00",

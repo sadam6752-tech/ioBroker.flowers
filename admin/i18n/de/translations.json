@@ -9,6 +9,8 @@
   "Monitoring": "Überwachung",
   "Check Interval": "Prüfintervall",
   "Max Messages per Day": "Max. Nachrichten pro Tag",
+  "Repeat Interval (min)": "Wiederholungsintervall (Min.)",
+  "Repeat alert interval in minutes if threshold is still exceeded (0 = no repeat)": "Wiederholungsintervall in Minuten wenn Schwellenwert weiterhin überschritten (0 = keine Wiederholung)",
   "Offline Threshold (hours)": "Offline-Schwellenwert (Stunden)",
   "Night Mode": "Nachtmodus",
   "Enable Night Mode": "Nachtmodus aktivieren",

@@ -9,6 +9,8 @@
   "Monitoring": "Monitoring",
   "Check Interval": "Check Interval",
   "Max Messages per Day": "Max Messages per Day",
+  "Repeat Interval (min)": "Repeat Interval (min)",
+  "Repeat alert interval in minutes if threshold is still exceeded (0 = no repeat)": "Repeat alert interval in minutes if threshold is still exceeded (0 = no repeat)",
   "Offline Threshold (hours)": "Offline Threshold (hours)",
   "Night Mode": "Night Mode",
   "Enable Night Mode": "Enable Night Mode",
