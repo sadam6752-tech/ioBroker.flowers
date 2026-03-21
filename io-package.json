@@ -15,19 +15,6 @@
         "nl": "Knop sendWeeklyReport toegevoegd; repochecker fouten opgelost",
         "uk": "Додано кнопку sendWeeklyReport; виправлено помилки repochecker",
         "zh-cn": "添加sendWeeklyReport按钮；修复repochecker问题"
-      },
-      "0.1.0": {
-        "en": "Initial release: plant monitoring with Telegram notifications, configurable thresholds, night mode and periodic reports",
-        "de": "Erstveroeffentlichung: Pflanzenueberwachung mit Telegram-Benachrichtigungen, konfigurierbaren Schwellenwerten, Nachtmodus und periodischen Berichten",
-        "ru": "Первый релиз: мониторинг растений с Telegram-уведомлениями, настраиваемыми порогами, ночным режимом и периодическими отчётами",
-        "fr": "Premiere version: surveillance des plantes avec notifications Telegram, seuils configurables, mode nuit et rapports periodiques",
-        "it": "Prima versione: monitoraggio piante con notifiche Telegram, soglie configurabili, modalita notte e report periodici",
-        "es": "Primera version: monitoreo de plantas con notificaciones Telegram, umbrales configurables, modo nocturno e informes periodicos",
-        "pl": "Pierwsza wersja: monitorowanie roslin z powiadomieniami Telegram, konfigurowalnymi progami, trybem nocnym i raportami okresowymi",
-        "pt": "Primeira versao: monitoramento de plantas com notificacoes Telegram, limites configuraveis, modo noturno e relatorios periodicos",
-        "nl": "Eerste versie: plantenmonitoring met Telegram-meldingen, configureerbare drempelwaarden, nachtmodus en periodieke rapporten",
-        "uk": "Перший реліз: моніторинг рослин з Telegram-сповіщеннями, налаштовуваними порогами, нічним режимом та періодичними звітами",
-        "zh-cn": "初始版本：植物监控，支持Telegram通知、可配置阈值、夜间模式和定期报告"
       }
     },
     "titleLang": {
