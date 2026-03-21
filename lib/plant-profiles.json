@@ -1,0 +1,101 @@
+{
+  "Ficus": {
+    "name": "Ficus",
+    "humidityMin": 40,
+    "humidityMax": 70,
+    "temperatureMin": 18,
+    "temperatureMax": 25,
+    "batteryMin": 20,
+    "wateringIntervalDays": 7
+  },
+  "Orchid": {
+    "name": "Orchid",
+    "humidityMin": 50,
+    "humidityMax": 70,
+    "temperatureMin": 18,
+    "temperatureMax": 25,
+    "batteryMin": 20,
+    "wateringIntervalDays": 10
+  },
+  "Cactus": {
+    "name": "Cactus",
+    "humidityMin": 10,
+    "humidityMax": 30,
+    "temperatureMin": 15,
+    "temperatureMax": 35,
+    "batteryMin": 20,
+    "wateringIntervalDays": 21
+  },
+  "Monstera": {
+    "name": "Monstera",
+    "humidityMin": 40,
+    "humidityMax": 60,
+    "temperatureMin": 18,
+    "temperatureMax": 27,
+    "batteryMin": 20,
+    "wateringIntervalDays": 7
+  },
+  "Fern": {
+    "name": "Fern",
+    "humidityMin": 60,
+    "humidityMax": 80,
+    "temperatureMin": 15,
+    "temperatureMax": 22,
+    "batteryMin": 20,
+    "wateringIntervalDays": 3
+  },
+  "Succulent": {
+    "name": "Succulent",
+    "humidityMin": 10,
+    "humidityMax": 30,
+    "temperatureMin": 15,
+    "temperatureMax": 30,
+    "batteryMin": 20,
+    "wateringIntervalDays": 14
+  },
+  "Palm": {
+    "name": "Palm",
+    "humidityMin": 40,
+    "humidityMax": 60,
+    "temperatureMin": 18,
+    "temperatureMax": 27,
+    "batteryMin": 20,
+    "wateringIntervalDays": 7
+  },
+  "Pothos": {
+    "name": "Pothos",
+    "humidityMin": 40,
+    "humidityMax": 60,
+    "temperatureMin": 15,
+    "temperatureMax": 27,
+    "batteryMin": 20,
+    "wateringIntervalDays": 7
+  },
+  "AloeVera": {
+    "name": "Aloe Vera",
+    "humidityMin": 10,
+    "humidityMax": 30,
+    "temperatureMin": 15,
+    "temperatureMax": 30,
+    "batteryMin": 20,
+    "wateringIntervalDays": 14
+  },
+  "PeaceLily": {
+    "name": "Peace Lily",
+    "humidityMin": 50,
+    "humidityMax": 70,
+    "temperatureMin": 18,
+    "temperatureMax": 27,
+    "batteryMin": 20,
+    "wateringIntervalDays": 5
+  },
+  "Custom": {
+    "name": "Custom",
+    "humidityMin": 30,
+    "humidityMax": 70,
+    "temperatureMin": 15,
+    "temperatureMax": 30,
+    "batteryMin": 20,
+    "wateringIntervalDays": 7
+  }
+}

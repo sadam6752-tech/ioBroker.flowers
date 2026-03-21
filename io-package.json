@@ -1,0 +1,144 @@
+{
+  "common": {
+    "name": "flowers",
+    "version": "0.1.0",
+    "news": {
+      "0.1.0": {
+        "en": "Initial release: plant monitoring with Telegram notifications, configurable thresholds, night mode and periodic reports",
+        "de": "Erstveröffentlichung: Pflanzenüberwachung mit Telegram-Benachrichtigungen, konfigurierbaren Schwellenwerten, Nachtmodus und periodischen Berichten",
+        "ru": "Первый релиз: мониторинг растений с Telegram-уведомлениями, настраиваемыми порогами, ночным режимом и периодическими отчётами",
+        "fr": "Première version: surveillance des plantes avec notifications Telegram, seuils configurables, mode nuit et rapports périodiques",
+        "it": "Prima versione: monitoraggio piante con notifiche Telegram, soglie configurabili, modalità notte e report periodici",
+        "es": "Primera versión: monitoreo de plantas con notificaciones Telegram, umbrales configurables, modo nocturno e informes periódicos",
+        "pl": "Pierwsza wersja: monitorowanie roślin z powiadomieniami Telegram, konfigurowalnymi progami, trybem nocnym i raportami okresowymi",
+        "pt": "Primeira versão: monitoramento de plantas com notificações Telegram, limites configuráveis, modo noturno e relatórios periódicos",
+        "nl": "Eerste versie: plantenmonitoring met Telegram-meldingen, configureerbare drempelwaarden, nachtmodus en periodieke rapporten",
+        "uk": "Перший реліз: моніторинг рослин з Telegram-сповіщеннями, налаштовуваними порогами, нічним режимом та періодичними звітами",
+        "zh-cn": "初始版本：植物监控，支持Telegram通知、可配置阈值、夜间模式和定期报告"
+      }
+    },
+    "titleLang": {
+      "en": "Flowers Monitor",
+      "de": "Pflanzen Monitor",
+      "ru": "Мониторинг растений",
+      "fr": "Moniteur de plantes",
+      "it": "Monitor piante",
+      "es": "Monitor de plantas",
+      "pl": "Monitor roślin",
+      "pt": "Monitor de plantas",
+      "nl": "Planten monitor",
+      "uk": "Моніторинг рослин",
+      "zh-cn": "植物监控"
+    },
+    "desc": {
+      "en": "Monitor indoor plants via soil moisture, temperature and battery sensors with Telegram notifications",
+      "de": "Zimmerpflanzen über Bodenfeuchte-, Temperatur- und Batteriesensoren mit Telegram-Benachrichtigungen überwachen",
+      "ru": "Мониторинг комнатных растений через датчики влажности почвы, температуры и заряда батареи с Telegram-уведомлениями",
+      "fr": "Surveiller les plantes d'intérieur via des capteurs d'humidité du sol, de température et de batterie avec des notifications Telegram",
+      "it": "Monitora le piante d'appartamento tramite sensori di umidità del suolo, temperatura e batteria con notifiche Telegram",
+      "es": "Monitorear plantas de interior mediante sensores de humedad del suelo, temperatura y batería con notificaciones Telegram",
+      "pl": "Monitoruj rośliny doniczkowe za pomocą czujników wilgotności gleby, temperatury i baterii z powiadomieniami Telegram",
+      "pt": "Monitorar plantas de interior através de sensores de umidade do solo, temperatura e bateria com notificações Telegram",
+      "nl": "Kamerplanten bewaken via bodemvochtigheids-, temperatuur- en batterijsensoren met Telegram-meldingen",
+      "uk": "Моніторинг кімнатних рослин через датчики вологості ґрунту, температури та заряду батареї з Telegram-сповіщеннями",
+      "zh-cn": "通过土壤湿度、温度和电池传感器监控室内植物，支持Telegram通知"
+    },
+    "authors": [
+      "sadam6752-tech <sadam6752@gmail.com>"
+    ],
+    "keywords": [
+      "flowers",
+      "plant",
+      "moisture",
+      "temperature",
+      "telegram",
+      "monitoring"
+    ],
+    "licenseInformation": {
+      "license": "MIT",
+      "type": "free"
+    },
+    "platform": "Javascript/Node.js",
+    "icon": "flowers.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/sadam6752-tech/ioBroker.flowers/main/admin/flowers.png",
+    "readme": "https://github.com/sadam6752-tech/ioBroker.flowers/blob/main/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "climate-control",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "push",
+    "adminUI": {
+      "config": "json"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.6.17"
+      }
+    ],
+    "tier": 3
+  },
+  "native": {
+    "telegramInstance": "0",
+    "telegramUsers": "",
+    "checkInterval": "60",
+    "maxMessagesPerDay": 10,
+    "offlineThreshold": 3,
+    "nightModeEnabled": false,
+    "nightModeStart": "22:00",
+    "nightModeEnd": "08:00",
+    "dailyReportEnabled": false,
+    "dailyReportTime": "20:00",
+    "weeklyReportEnabled": false,
+    "weeklyReportDay": "1",
+    "weeklyReportTime": "10:00",
+    "plants": []
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": { "name": "Information" },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Connection status",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "notifications",
+      "type": "channel",
+      "common": { "name": "Notifications" },
+      "native": {}
+    },
+    {
+      "_id": "notifications.totalToday",
+      "type": "state",
+      "common": {
+        "role": "value",
+        "name": "Total notifications today",
+        "type": "number",
+        "read": true,
+        "write": false,
+        "def": 0
+      },
+      "native": {}
+    }
+  ]
+}
