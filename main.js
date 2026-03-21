@@ -147,7 +147,7 @@ class FlowersAdapter extends utils.Adapter {
 
     const delay = next - now;
     this._weeklyReportTimer = this.setTimeout(async () => {
-      await this.notif.sendDailyReport(this.monitor.getPlantStates());
+      await this.notif.sendWeeklyReport(this.monitor.getPlantStates());
       this._scheduleWeeklyReport();
     }, delay);
 
