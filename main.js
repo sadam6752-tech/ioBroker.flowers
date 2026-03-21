@@ -57,7 +57,7 @@ class FlowersAdapter extends utils.Adapter {
   }
 
   async onStateChange(id, state) {
-    if (!state || state.ack) {
+    if (!state || state.val === null || state.val === undefined) {
       return;
     }
     await this.monitor.onStateChange(id, state);
