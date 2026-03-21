@@ -53,6 +53,5 @@
   "Coffea arabica": "Coffea arabica",
   "Rhapis excelsa": "Rhapis excelsa",
   "Calathea zebrina": "Calathea zebrina",
-  "Sansevieria Laurentii": "Sansevieria Laurentii",
-  "profile_table_text": "Perfil | Humidade % | Temperatura °C | Intervalo de rega\n--- | --- | --- | ---\nFicus | 40–70% | 18–25°C | 7 dias\nOrchid | 50–70% | 18–25°C | 10 dias\nCactus | 10–30% | 15–35°C | 21 dias\nMonstera | 40–60% | 18–27°C | 7 dias\nFern | 60–80% | 15–22°C | 3 dias\nSucculent | 10–30% | 15–30°C | 14 dias\nPalm | 40–60% | 18–27°C | 7 dias\nPothos | 40–60% | 15–27°C | 7 dias\nAloe Vera | 10–30% | 15–30°C | 14 dias\nPeace Lily | 50–70% | 18–27°C | 5 dias\nCoffea arabica | 60–80% | 18–27°C | 7 dias\nRhapis excelsa | 40–60% | 15–25°C | 10 dias\nCalathea zebrina | 60–80% | 18–29°C | 5 dias\nSansevieria Laurentii | 10–40% | 16–27°C | 21 dias\nCustom | configurável | configurável | configurável"
+  "Sansevieria Laurentii": "Sansevieria Laurentii"
 }

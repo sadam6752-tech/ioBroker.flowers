@@ -53,6 +53,5 @@
   "Coffea arabica": "咖啡阿拉比卡",
   "Rhapis excelsa": "棕竹",
   "Calathea zebrina": "斑马竹芋",
-  "Sansevieria Laurentii": "金边虎尾兰",
-  "profile_table_text": "配置文件 | 湿度% | 温度°C | 浇水间隔\n--- | --- | --- | ---\nFicus | 40–70% | 18–25°C | 7天\nOrchid | 50–70% | 18–25°C | 10天\nCactus | 10–30% | 15–35°C | 21天\nMonstera | 40–60% | 18–27°C | 7天\nFern | 60–80% | 15–22°C | 3天\nSucculent | 10–30% | 15–30°C | 14天\nPalm | 40–60% | 18–27°C | 7天\nPothos | 40–60% | 15–27°C | 7天\nAloe Vera | 10–30% | 15–30°C | 14天\nPeace Lily | 50–70% | 18–27°C | 5天\nCoffea arabica | 60–80% | 18–27°C | 7天\nRhapis excelsa | 40–60% | 15–25°C | 10天\nCalathea zebrina | 60–80% | 18–29°C | 5天\nSansevieria Laurentii | 10–40% | 16–27°C | 21天\nCustom | 可配置 | 可配置 | 可配置"
+  "Sansevieria Laurentii": "金边虎尾兰"
 }

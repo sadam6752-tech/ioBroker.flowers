@@ -417,13 +417,137 @@
           "xl": 12
         },
         "_profileTable": {
-          "type": "staticText",
-          "text": "profile_table_text",
+          "type": "table",
+          "label": "",
+          "noDelete": true,
+          "noAdd": true,
           "xs": 12,
           "sm": 12,
           "md": 12,
           "lg": 12,
-          "xl": 12
+          "xl": 12,
+          "default": [
+            {
+              "profile": "Ficus",
+              "humidity": "40–70%",
+              "temperature": "18–25°C",
+              "watering": "7"
+            },
+            {
+              "profile": "Orchid",
+              "humidity": "50–70%",
+              "temperature": "18–25°C",
+              "watering": "10"
+            },
+            {
+              "profile": "Cactus",
+              "humidity": "10–30%",
+              "temperature": "15–35°C",
+              "watering": "21"
+            },
+            {
+              "profile": "Monstera",
+              "humidity": "40–60%",
+              "temperature": "18–27°C",
+              "watering": "7"
+            },
+            {
+              "profile": "Fern",
+              "humidity": "60–80%",
+              "temperature": "15–22°C",
+              "watering": "3"
+            },
+            {
+              "profile": "Succulent",
+              "humidity": "10–30%",
+              "temperature": "15–30°C",
+              "watering": "14"
+            },
+            {
+              "profile": "Palm",
+              "humidity": "40–60%",
+              "temperature": "18–27°C",
+              "watering": "7"
+            },
+            {
+              "profile": "Pothos",
+              "humidity": "40–60%",
+              "temperature": "15–27°C",
+              "watering": "7"
+            },
+            {
+              "profile": "Aloe Vera",
+              "humidity": "10–30%",
+              "temperature": "15–30°C",
+              "watering": "14"
+            },
+            {
+              "profile": "Peace Lily",
+              "humidity": "50–70%",
+              "temperature": "18–27°C",
+              "watering": "5"
+            },
+            {
+              "profile": "Coffea arabica",
+              "humidity": "60–80%",
+              "temperature": "18–27°C",
+              "watering": "7"
+            },
+            {
+              "profile": "Rhapis excelsa",
+              "humidity": "40–60%",
+              "temperature": "15–25°C",
+              "watering": "10"
+            },
+            {
+              "profile": "Calathea zebrina",
+              "humidity": "60–80%",
+              "temperature": "18–29°C",
+              "watering": "5"
+            },
+            {
+              "profile": "Sansevieria Laurentii",
+              "humidity": "10–40%",
+              "temperature": "16–27°C",
+              "watering": "21"
+            },
+            {
+              "profile": "Custom",
+              "humidity": "—",
+              "temperature": "—",
+              "watering": "—"
+            }
+          ],
+          "items": [
+            {
+              "type": "text",
+              "title": "Profile",
+              "attr": "profile",
+              "width": "30%",
+              "readOnly": true
+            },
+            {
+              "type": "text",
+              "title": "Humidity %",
+              "attr": "humidity",
+              "width": "25%",
+              "readOnly": true
+            },
+            {
+              "type": "text",
+              "title": "Temperature °C",
+              "attr": "temperature",
+              "width": "25%",
+              "readOnly": true
+            },
+            {
+              "type": "text",
+              "title": "Watering (days)",
+              "attr": "watering",
+              "width": "20%",
+              "readOnly": true
+            }
+          ]
         }
       }
     }
