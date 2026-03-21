@@ -49,5 +49,10 @@
   "Temp Max": "Temp Max",
   "Bat Min %": "Bat Min %",
   "Enabled": "Enabled",
-  "Built-in plant profiles with recommended thresholds. Select a profile in the Plants tab — thresholds will be applied automatically. You can override individual values per plant.": "Built-in plant profiles with recommended thresholds. Select a profile in the Plants tab — thresholds will be applied automatically. You can override individual values per plant."
+  "Built-in plant profiles with recommended thresholds. Select a profile in the Plants tab — thresholds will be applied automatically. You can override individual values per plant.": "Built-in plant profiles with recommended thresholds. Select a profile in the Plants tab — thresholds will be applied automatically. You can override individual values per plant.",
+  "Coffea arabica": "Coffea arabica",
+  "Rhapis excelsa": "Rhapis excelsa",
+  "Calathea zebrina": "Calathea zebrina",
+  "Sansevieria Laurentii": "Sansevieria Laurentii",
+  "profile_table_text": "Profile | Humidity % | Temperature °C | Watering interval\n--- | --- | --- | ---\nFicus | 40–70% | 18–25°C | 7 days\nOrchid | 50–70% | 18–25°C | 10 days\nCactus | 10–30% | 15–35°C | 21 days\nMonstera | 40–60% | 18–27°C | 7 days\nFern | 60–80% | 15–22°C | 3 days\nSucculent | 10–30% | 15–30°C | 14 days\nPalm | 40–60% | 18–27°C | 7 days\nPothos | 40–60% | 15–27°C | 7 days\nAloe Vera | 10–30% | 15–30°C | 14 days\nPeace Lily | 50–70% | 18–27°C | 5 days\nCoffea arabica | 60–80% | 18–27°C | 7 days\nRhapis excelsa | 40–60% | 15–25°C | 10 days\nCalathea zebrina | 60–80% | 18–29°C | 5 days\nSansevieria Laurentii | 10–40% | 16–27°C | 21 days\nCustom | configurable | configurable | configurable"
 }

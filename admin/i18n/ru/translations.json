@@ -49,5 +49,10 @@
   "Temp Max": "Темп Макс",
   "Bat Min %": "Бат Мин %",
   "Enabled": "Включено",
-  "Built-in plant profiles with recommended thresholds. Select a profile in the Plants tab — thresholds will be applied automatically. You can override individual values per plant.": "Встроенные профили растений с рекомендуемыми порогами. Выберите профиль на вкладке Растения — пороги применятся автоматически. Можно переопределить отдельные значения для каждого растения."
+  "Built-in plant profiles with recommended thresholds. Select a profile in the Plants tab — thresholds will be applied automatically. You can override individual values per plant.": "Встроенные профили растений с рекомендуемыми порогами. Выберите профиль на вкладке Растения — пороги применятся автоматически. Можно переопределить отдельные значения для каждого растения.",
+  "Coffea arabica": "Coffea arabica",
+  "Rhapis excelsa": "Rhapis excelsa",
+  "Calathea zebrina": "Calathea zebrina",
+  "Sansevieria Laurentii": "Sansevieria Laurentii",
+  "profile_table_text": "Профиль | Влажность % | Температура °C | Интервал полива\n--- | --- | --- | ---\nФикус | 40–70% | 18–25°C | 7 дней\nОрхидея | 50–70% | 18–25°C | 10 дней\nКактус | 10–30% | 15–35°C | 21 день\nМонстера | 40–60% | 18–27°C | 7 дней\nПапоротник | 60–80% | 15–22°C | 3 дня\nСуккулент | 10–30% | 15–30°C | 14 дней\nПальма | 40–60% | 18–27°C | 7 дней\nПотос | 40–60% | 15–27°C | 7 дней\nАлоэ Вера | 10–30% | 15–30°C | 14 дней\nСпатифиллум | 50–70% | 18–27°C | 5 дней\nCoffea arabica | 60–80% | 18–27°C | 7 дней\nRhapis excelsa | 40–60% | 15–25°C | 10 дней\nCalathea zebrina | 60–80% | 18–29°C | 5 дней\nSansevieria Laurentii | 10–40% | 16–27°C | 21 день\nПользовательский | настраиваемый | настраиваемый | настраиваемый"
 }

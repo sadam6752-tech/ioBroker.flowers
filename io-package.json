@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "news": {
       "0.1.0": {
         "en": "Initial release: plant monitoring with Telegram notifications, configurable thresholds, night mode and periodic reports",
@@ -15,6 +15,19 @@
         "nl": "Eerste versie: plantenmonitoring met Telegram-meldingen, configureerbare drempelwaarden, nachtmodus en periodieke rapporten",
         "uk": "Перший реліз: моніторинг рослин з Telegram-сповіщеннями, налаштовуваними порогами, нічним режимом та періодичними звітами",
         "zh-cn": "初始版本：植物监控，支持Telegram通知、可配置阈值、夜间模式和定期报告"
+      },
+      "0.2.0": {
+        "en": "Added 4 new plant profiles (Coffea arabica, Rhapis excelsa, Calathea zebrina, Sansevieria Laurentii); added translations for all 11 languages",
+        "de": "4 neue Pflanzenprofile hinzugefügt (Coffea arabica, Rhapis excelsa, Calathea zebrina, Sansevieria Laurentii); Übersetzungen für alle 11 Sprachen ergänzt",
+        "ru": "Добавлены 4 новых профиля растений (Coffea arabica, Rhapis excelsa, Calathea zebrina, Sansevieria Laurentii); добавлены переводы на все 11 языков",
+        "fr": "4 nouveaux profils de plantes ajoutés (Coffea arabica, Rhapis excelsa, Calathea zebrina, Sansevieria Laurentii); traductions pour les 11 langues ajoutées",
+        "it": "Aggiunti 4 nuovi profili di piante (Coffea arabica, Rhapis excelsa, Calathea zebrina, Sansevieria Laurentii); aggiunte traduzioni per tutte le 11 lingue",
+        "es": "Añadidos 4 nuevos perfiles de plantas (Coffea arabica, Rhapis excelsa, Calathea zebrina, Sansevieria Laurentii); traducciones para los 11 idiomas añadidas",
+        "pl": "Dodano 4 nowe profile roślin (Coffea arabica, Rhapis excelsa, Calathea zebrina, Sansevieria Laurentii); dodano tłumaczenia dla wszystkich 11 języków",
+        "pt": "Adicionados 4 novos perfis de plantas (Coffea arabica, Rhapis excelsa, Calathea zebrina, Sansevieria Laurentii); traduções para todos os 11 idiomas adicionadas",
+        "nl": "4 nieuwe plantenprofielen toegevoegd (Coffea arabica, Rhapis excelsa, Calathea zebrina, Sansevieria Laurentii); vertalingen voor alle 11 talen toegevoegd",
+        "uk": "Додано 4 нових профілі рослин (Coffea arabica, Rhapis excelsa, Calathea zebrina, Sansevieria Laurentii); додано переклади для всіх 11 мов",
+        "zh-cn": "新增4个植物配置文件（Coffea arabica、Rhapis excelsa、Calathea zebrina、Sansevieria Laurentii）；新增所有11种语言翻译"
       }
     },
     "titleLang": {
@@ -106,7 +119,9 @@
     {
       "_id": "info",
       "type": "channel",
-      "common": { "name": "Information" },
+      "common": {
+        "name": "Information"
+      },
       "native": {}
     },
     {
@@ -125,7 +140,9 @@
     {
       "_id": "notifications",
       "type": "channel",
-      "common": { "name": "Notifications" },
+      "common": {
+        "name": "Notifications"
+      },
       "native": {}
     },
     {

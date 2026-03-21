@@ -16,7 +16,11 @@
           "label": "Telegram Instance",
           "adapter": "telegram",
           "default": "0",
-          "xs": 12, "sm": 6, "md": 4, "lg": 4, "xl": 4
+          "xs": 12,
+          "sm": 6,
+          "md": 4,
+          "lg": 4,
+          "xl": 4
         },
         "telegramUsers": {
           "type": "text",
@@ -24,7 +28,11 @@
           "help": "Comma-separated usernames or leave empty for all users",
           "placeholder": "user1,user2",
           "default": "",
-          "xs": 12, "sm": 6, "md": 8, "lg": 8, "xl": 8
+          "xs": 12,
+          "sm": 6,
+          "md": 8,
+          "lg": 8,
+          "xl": 8
         },
         "_monitorHeader": {
           "type": "header",
@@ -35,16 +43,41 @@
           "type": "select",
           "label": "Check Interval",
           "options": [
-            { "label": "5 minutes",  "value": "5" },
-            { "label": "15 minutes", "value": "15" },
-            { "label": "30 minutes", "value": "30" },
-            { "label": "1 hour",     "value": "60" },
-            { "label": "2 hours",    "value": "120" },
-            { "label": "6 hours",    "value": "360" },
-            { "label": "24 hours",   "value": "1440" }
+            {
+              "label": "5 minutes",
+              "value": "5"
+            },
+            {
+              "label": "15 minutes",
+              "value": "15"
+            },
+            {
+              "label": "30 minutes",
+              "value": "30"
+            },
+            {
+              "label": "1 hour",
+              "value": "60"
+            },
+            {
+              "label": "2 hours",
+              "value": "120"
+            },
+            {
+              "label": "6 hours",
+              "value": "360"
+            },
+            {
+              "label": "24 hours",
+              "value": "1440"
+            }
           ],
           "default": "60",
-          "xs": 12, "sm": 6, "md": 4, "lg": 3, "xl": 3
+          "xs": 12,
+          "sm": 6,
+          "md": 4,
+          "lg": 3,
+          "xl": 3
         },
         "maxMessagesPerDay": {
           "type": "number",
@@ -52,7 +85,11 @@
           "min": 1,
           "max": 100,
           "default": 10,
-          "xs": 12, "sm": 6, "md": 4, "lg": 3, "xl": 3
+          "xs": 12,
+          "sm": 6,
+          "md": 4,
+          "lg": 3,
+          "xl": 3
         },
         "repeatInterval": {
           "type": "number",
@@ -61,7 +98,11 @@
           "min": 0,
           "max": 1440,
           "default": 60,
-          "xs": 12, "sm": 6, "md": 4, "lg": 3, "xl": 3
+          "xs": 12,
+          "sm": 6,
+          "md": 4,
+          "lg": 3,
+          "xl": 3
         },
         "offlineThreshold": {
           "type": "number",
@@ -69,7 +110,11 @@
           "min": 1,
           "max": 48,
           "default": 3,
-          "xs": 12, "sm": 6, "md": 4, "lg": 3, "xl": 3
+          "xs": 12,
+          "sm": 6,
+          "md": 4,
+          "lg": 3,
+          "xl": 3
         },
         "_nightHeader": {
           "type": "header",
@@ -80,21 +125,33 @@
           "type": "checkbox",
           "label": "Enable Night Mode",
           "default": false,
-          "xs": 12, "sm": 4, "md": 4, "lg": 4, "xl": 4
+          "xs": 12,
+          "sm": 4,
+          "md": 4,
+          "lg": 4,
+          "xl": 4
         },
         "nightModeStart": {
           "type": "text",
           "label": "Night Mode Start",
           "default": "22:00",
           "disabled": "!data.nightModeEnabled",
-          "xs": 12, "sm": 4, "md": 4, "lg": 4, "xl": 4
+          "xs": 12,
+          "sm": 4,
+          "md": 4,
+          "lg": 4,
+          "xl": 4
         },
         "nightModeEnd": {
           "type": "text",
           "label": "Night Mode End",
           "default": "08:00",
           "disabled": "!data.nightModeEnabled",
-          "xs": 12, "sm": 4, "md": 4, "lg": 4, "xl": 4
+          "xs": 12,
+          "sm": 4,
+          "md": 4,
+          "lg": 4,
+          "xl": 4
         },
         "_reportHeader": {
           "type": "header",
@@ -105,43 +162,84 @@
           "type": "checkbox",
           "label": "Daily Report",
           "default": false,
-          "xs": 12, "sm": 4, "md": 3, "lg": 3, "xl": 3
+          "xs": 12,
+          "sm": 4,
+          "md": 3,
+          "lg": 3,
+          "xl": 3
         },
         "dailyReportTime": {
           "type": "text",
           "label": "Daily Report Time",
           "default": "20:00",
           "disabled": "!data.dailyReportEnabled",
-          "xs": 12, "sm": 4, "md": 3, "lg": 3, "xl": 3
+          "xs": 12,
+          "sm": 4,
+          "md": 3,
+          "lg": 3,
+          "xl": 3
         },
         "weeklyReportEnabled": {
           "type": "checkbox",
           "label": "Weekly Report",
           "default": false,
-          "xs": 12, "sm": 4, "md": 3, "lg": 3, "xl": 3
+          "xs": 12,
+          "sm": 4,
+          "md": 3,
+          "lg": 3,
+          "xl": 3
         },
         "weeklyReportDay": {
           "type": "select",
           "label": "Weekly Report Day",
           "options": [
-            { "label": "Monday",    "value": "1" },
-            { "label": "Tuesday",   "value": "2" },
-            { "label": "Wednesday", "value": "3" },
-            { "label": "Thursday",  "value": "4" },
-            { "label": "Friday",    "value": "5" },
-            { "label": "Saturday",  "value": "6" },
-            { "label": "Sunday",    "value": "0" }
+            {
+              "label": "Monday",
+              "value": "1"
+            },
+            {
+              "label": "Tuesday",
+              "value": "2"
+            },
+            {
+              "label": "Wednesday",
+              "value": "3"
+            },
+            {
+              "label": "Thursday",
+              "value": "4"
+            },
+            {
+              "label": "Friday",
+              "value": "5"
+            },
+            {
+              "label": "Saturday",
+              "value": "6"
+            },
+            {
+              "label": "Sunday",
+              "value": "0"
+            }
           ],
           "default": "1",
           "disabled": "!data.weeklyReportEnabled",
-          "xs": 12, "sm": 4, "md": 3, "lg": 3, "xl": 3
+          "xs": 12,
+          "sm": 4,
+          "md": 3,
+          "lg": 3,
+          "xl": 3
         },
         "weeklyReportTime": {
           "type": "text",
           "label": "Weekly Report Time",
           "default": "10:00",
           "disabled": "!data.weeklyReportEnabled",
-          "xs": 12, "sm": 4, "md": 3, "lg": 3, "xl": 3
+          "xs": 12,
+          "sm": 4,
+          "md": 3,
+          "lg": 3,
+          "xl": 3
         }
       }
     },
@@ -152,12 +250,20 @@
         "_plantsInfo": {
           "type": "staticText",
           "text": "Add your plants here. Select the ioBroker state IDs for each sensor. Thresholds override the selected profile values.",
-          "xs": 12, "sm": 12, "md": 12, "lg": 12, "xl": 12
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
         },
         "plants": {
           "type": "table",
           "label": "Plants",
-          "xs": 12, "sm": 12, "md": 12, "lg": 12, "xl": 12,
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12,
           "items": [
             {
               "type": "text",
@@ -177,17 +283,66 @@
               "attr": "profile",
               "width": "10%",
               "options": [
-                { "label": "Ficus",      "value": "Ficus" },
-                { "label": "Orchid",     "value": "Orchid" },
-                { "label": "Cactus",     "value": "Cactus" },
-                { "label": "Monstera",   "value": "Monstera" },
-                { "label": "Fern",       "value": "Fern" },
-                { "label": "Succulent",  "value": "Succulent" },
-                { "label": "Palm",       "value": "Palm" },
-                { "label": "Pothos",     "value": "Pothos" },
-                { "label": "Aloe Vera",  "value": "AloeVera" },
-                { "label": "Peace Lily", "value": "PeaceLily" },
-                { "label": "Custom",     "value": "Custom" }
+                {
+                  "label": "Ficus",
+                  "value": "Ficus"
+                },
+                {
+                  "label": "Orchid",
+                  "value": "Orchid"
+                },
+                {
+                  "label": "Cactus",
+                  "value": "Cactus"
+                },
+                {
+                  "label": "Monstera",
+                  "value": "Monstera"
+                },
+                {
+                  "label": "Fern",
+                  "value": "Fern"
+                },
+                {
+                  "label": "Succulent",
+                  "value": "Succulent"
+                },
+                {
+                  "label": "Palm",
+                  "value": "Palm"
+                },
+                {
+                  "label": "Pothos",
+                  "value": "Pothos"
+                },
+                {
+                  "label": "Aloe Vera",
+                  "value": "AloeVera"
+                },
+                {
+                  "label": "Peace Lily",
+                  "value": "PeaceLily"
+                },
+                {
+                  "label": "Coffea arabica",
+                  "value": "CoffeaArabica"
+                },
+                {
+                  "label": "Rhapis excelsa",
+                  "value": "RhapisExcelsa"
+                },
+                {
+                  "label": "Calathea zebrina",
+                  "value": "Calathea"
+                },
+                {
+                  "label": "Sansevieria Laurentii",
+                  "value": "Sansevieria"
+                },
+                {
+                  "label": "Custom",
+                  "value": "Custom"
+                }
               ]
             },
             {
@@ -255,12 +410,20 @@
         "_profilesInfo": {
           "type": "staticText",
           "text": "Built-in plant profiles with recommended thresholds. Select a profile in the Plants tab — thresholds will be applied automatically. You can override individual values per plant.",
-          "xs": 12, "sm": 12, "md": 12, "lg": 12, "xl": 12
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
         },
         "_profileTable": {
           "type": "staticText",
-          "text": "Profile | Humidity % | Temperature °C | Watering interval\n--- | --- | --- | ---\nFicus | 40–70% | 18–25°C | 7 days\nOrchid | 50–70% | 18–25°C | 10 days\nCactus | 10–30% | 15–35°C | 21 days\nMonstera | 40–60% | 18–27°C | 7 days\nFern | 60–80% | 15–22°C | 3 days\nSucculent | 10–30% | 15–30°C | 14 days\nPalm | 40–60% | 18–27°C | 7 days\nPothos | 40–60% | 15–27°C | 7 days\nAloe Vera | 10–30% | 15–30°C | 14 days\nPeace Lily | 50–70% | 18–27°C | 5 days",
-          "xs": 12, "sm": 12, "md": 12, "lg": 12, "xl": 12
+          "text": "profile_table_text",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12
         }
       }
     }

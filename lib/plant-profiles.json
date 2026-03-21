@@ -89,6 +89,42 @@
     "batteryMin": 20,
     "wateringIntervalDays": 5
   },
+  "CoffeaArabica": {
+    "name": "Coffea arabica",
+    "humidityMin": 60,
+    "humidityMax": 80,
+    "temperatureMin": 18,
+    "temperatureMax": 27,
+    "batteryMin": 20,
+    "wateringIntervalDays": 7
+  },
+  "RhapisExcelsa": {
+    "name": "Rhapis excelsa",
+    "humidityMin": 40,
+    "humidityMax": 60,
+    "temperatureMin": 15,
+    "temperatureMax": 25,
+    "batteryMin": 20,
+    "wateringIntervalDays": 10
+  },
+  "Calathea": {
+    "name": "Calathea zebrina",
+    "humidityMin": 60,
+    "humidityMax": 80,
+    "temperatureMin": 18,
+    "temperatureMax": 29,
+    "batteryMin": 20,
+    "wateringIntervalDays": 5
+  },
+  "Sansevieria": {
+    "name": "Sansevieria Laurentii",
+    "humidityMin": 10,
+    "humidityMax": 40,
+    "temperatureMin": 16,
+    "temperatureMax": 27,
+    "batteryMin": 20,
+    "wateringIntervalDays": 21
+  },
   "Custom": {
     "name": "Custom",
     "humidityMin": 30,
