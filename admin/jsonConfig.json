@@ -286,7 +286,7 @@
               "type": "checkbox",
               "title": "",
               "attr": "enabled",
-              "width": "30px"
+              "width": "10px"
             },
             {
               "type": "text",
@@ -384,7 +384,7 @@
               "type": "objectId",
               "title": "Battery Sensor",
               "attr": "sensorBattery",
-              "width": "12%"
+              "width": "14%"
             },
             {
               "type": "objectId",
@@ -424,7 +424,7 @@
               "type": "text",
               "title": "Bat Min %",
               "attr": "batteryMin",
-              "width": "7%",
+              "width": "9%",
               "placeholder": "—"
             }
           ]
