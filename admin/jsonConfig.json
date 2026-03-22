@@ -272,10 +272,10 @@
               "width": "13%"
             },
             {
-              "type": "text",
+              "type": "rooms",
               "title": "Location",
               "attr": "location",
-              "width": "9%"
+              "width": "12%"
             },
             {
               "type": "select",
