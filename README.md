@@ -57,6 +57,10 @@ And under `flowers.X`:
 
 ## Changelog
 
+### 0.2.9 (2026-03-22)
+- (sadam6752-tech) Automatic watering support: sensorWatering column, wateringDuration setting
+- (sadam6752-tech) Fixed checkbox column width; increased battery sensor column width
+
 ### 0.2.8 (2026-03-21)
 * (sadam6752-tech) Added sendWeeklyReport button for manual weekly report trigger
 * (sadam6752-tech) Fixed repochecker issues: grid values, dependencies
