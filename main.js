@@ -80,7 +80,7 @@ class FlowersAdapter extends utils.Adapter {
     // Test button: send daily report immediately
     if (id === `${this.namespace}.notifications.sendDailyReport` && state.val === true && !state.ack) {
       this.log.info("flowers: manual daily report triggered");
-      await this.notif.sendDailyReport(await this.monitor.getPlantStates());
+      await this.notif.sendDailyReport(this.monitor.getPlantStates());
       await this.setStateAsync("notifications.sendDailyReport", { val: false, ack: true });
       return;
     }
@@ -88,7 +88,7 @@ class FlowersAdapter extends utils.Adapter {
     // Test button: send weekly report immediately
     if (id === `${this.namespace}.notifications.sendWeeklyReport` && state.val === true && !state.ack) {
       this.log.info("flowers: manual weekly report triggered");
-      await this.notif.sendWeeklyReport(await this.monitor.getPlantStates());
+      await this.notif.sendWeeklyReport(this.monitor.getPlantStates());
       await this.setStateAsync("notifications.sendWeeklyReport", { val: false, ack: true });
       return;
     }
@@ -132,7 +132,7 @@ class FlowersAdapter extends utils.Adapter {
 
     const delay = next - now;
     this._dailyReportTimer = this.setTimeout(async () => {
-      await this.notif.sendDailyReport(await this.monitor.getPlantStates());
+      await this.notif.sendDailyReport(this.monitor.getPlantStates());
       // reschedule for next day
       this._scheduleDailyReport();
     }, delay);
@@ -156,7 +156,7 @@ class FlowersAdapter extends utils.Adapter {
 
     const delay = next - now;
     this._weeklyReportTimer = this.setTimeout(async () => {
-      await this.notif.sendWeeklyReport(await this.monitor.getPlantStates());
+      await this.notif.sendWeeklyReport(this.monitor.getPlantStates());
       this._scheduleWeeklyReport();
     }, delay);
 
