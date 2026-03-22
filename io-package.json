@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.2.8",
+    "version": "0.2.9",
     "news": {
+      "0.2.9": {
+        "en": "Automatic watering support; UI column width fixes",
+        "de": "Automatische Bewässerung; UI-Spaltenbreiten korrigiert",
+        "ru": "Автополив; исправлены ширины колонок UI",
+        "fr": "Arrosage automatique; corrections largeurs colonnes UI",
+        "it": "Irrigazione automatica; correzioni larghezze colonne UI",
+        "es": "Riego automático; correcciones anchos columnas UI",
+        "pl": "Automatyczne podlewanie; poprawki szerokości kolumn UI",
+        "pt": "Rega automática; correções larguras colunas UI",
+        "nl": "Automatisch bewateren; UI kolombreedtes gecorrigeerd",
+        "uk": "Автополив; виправлено ширини колонок UI",
+        "zh-cn": "自动浇水支持；修复UI列宽"
+      },
       "0.2.8": {
         "en": "Added sendWeeklyReport button; fixed repochecker issues",
         "de": "Schaltflaeche sendWeeklyReport hinzugefuegt; Repochecker-Fehler behoben",
