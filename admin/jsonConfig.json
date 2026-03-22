@@ -422,7 +422,7 @@
             },
             {
               "type": "text",
-              "title": "Bat Min %",
+              "title": "Battery Min %",
               "attr": "batteryMin",
               "width": "8%",
               "placeholder": "—"
