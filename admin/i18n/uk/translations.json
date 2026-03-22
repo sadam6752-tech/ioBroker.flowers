@@ -53,5 +53,8 @@
   "Coffea arabica": "Coffea arabica",
   "Rhapis excelsa": "Rhapis excelsa",
   "Calathea zebrina": "Calathea zebrina",
-  "Sansevieria Laurentii": "Sansevieria Laurentii"
+  "Sansevieria Laurentii": "Sansevieria Laurentii",
+  "Automatic Watering": "Автополив",
+  "Watering Duration (min)": "Час поливу (хв.)",
+  "Watering": "Полив"
 }

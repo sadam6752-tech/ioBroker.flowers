@@ -99,6 +99,7 @@
     "weeklyReportEnabled": false,
     "weeklyReportDay": "1",
     "weeklyReportTime": "10:00",
+    "wateringDuration": 3,
     "plants": []
   },
   "objects": [],

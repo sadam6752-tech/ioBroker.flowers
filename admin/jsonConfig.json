@@ -116,6 +116,23 @@
           "lg": 3,
           "xl": 3
         },
+        "_wateringHeader": {
+          "type": "header",
+          "text": "Automatic Watering",
+          "size": 3
+        },
+        "wateringDuration": {
+          "type": "number",
+          "label": "Watering Duration (min)",
+          "min": 1,
+          "max": 60,
+          "default": 3,
+          "xs": 12,
+          "sm": 6,
+          "md": 4,
+          "lg": 3,
+          "xl": 3
+        },
         "_nightHeader": {
           "type": "header",
           "text": "Night Mode",
@@ -266,6 +283,12 @@
           "xl": 12,
           "items": [
             {
+              "type": "checkbox",
+              "title": "",
+              "attr": "enabled",
+              "width": "4%"
+            },
+            {
               "type": "text",
               "title": "Name",
               "attr": "name",
@@ -364,6 +387,12 @@
               "width": "9%"
             },
             {
+              "type": "objectId",
+              "title": "Watering",
+              "attr": "sensorWatering",
+              "width": "10%"
+            },
+            {
               "type": "text",
               "title": "Hum Min %",
               "attr": "humidityMin",
@@ -397,12 +426,6 @@
               "attr": "batteryMin",
               "width": "7%",
               "placeholder": "—"
-            },
-            {
-              "type": "checkbox",
-              "title": "Enabled",
-              "attr": "enabled",
-              "width": "4%"
             }
           ]
         }
