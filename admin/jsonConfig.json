@@ -286,25 +286,25 @@
               "type": "checkbox",
               "title": "",
               "attr": "enabled",
-              "width": "10px"
+              "width": "3%"
             },
             {
               "type": "text",
               "title": "Name",
               "attr": "name",
-              "width": "13%"
+              "width": "10%"
             },
             {
               "type": "text",
               "title": "Location",
               "attr": "location",
-              "width": "10%"
+              "width": "8%"
             },
             {
               "type": "select",
               "title": "Profile",
               "attr": "profile",
-              "width": "10%",
+              "width": "9%",
               "options": [
                 {
                   "label": "Ficus",
@@ -372,25 +372,25 @@
               "type": "objectId",
               "title": "Humidity Sensor",
               "attr": "sensorHumidity",
-              "width": "14%"
+              "width": "13%"
             },
             {
               "type": "objectId",
               "title": "Temperature Sensor",
               "attr": "sensorTemperature",
-              "width": "14%"
+              "width": "13%"
             },
             {
               "type": "objectId",
               "title": "Battery Sensor",
               "attr": "sensorBattery",
-              "width": "14%"
+              "width": "13%"
             },
             {
               "type": "objectId",
               "title": "Watering",
               "attr": "sensorWatering",
-              "width": "10%"
+              "width": "9%"
             },
             {
               "type": "text",
@@ -424,7 +424,7 @@
               "type": "text",
               "title": "Bat Min %",
               "attr": "batteryMin",
-              "width": "9%",
+              "width": "8%",
               "placeholder": "—"
             }
           ]
