@@ -1,5 +1,7 @@
 # ioBroker.flowers
 
+![Logo](admin/flowers.png)
+
 [![NPM version](https://img.shields.io/npm/v/iobroker.flowers.svg)](https://www.npmjs.com/package/iobroker.flowers)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
