@@ -10,12 +10,15 @@ Monitor indoor plants via soil moisture, temperature and battery sensors with Te
 ## Features
 
 - Monitor multiple plants with individual sensor assignments
-- Built-in plant profiles (Ficus, Orchid, Cactus, Monstera, Fern, Succulent, Palm, Pothos, Aloe Vera, Peace Lily, Custom)
+- Built-in plant profiles (Ficus, Orchid, Cactus, Monstera, Fern, Succulent, Palm, Pothos, Aloe Vera, Peace Lily, Coffea arabica, Rhapis excelsa, Calathea zebrina, Sansevieria Laurentii, Custom)
+- Custom profiles: create your own plant profiles with individual thresholds in the Profiles tab
 - Configurable thresholds per plant (override profile defaults)
+- Automatic watering: trigger a watering switch when soil humidity drops below minimum
+- Configurable watering duration (minutes)
 - Telegram notifications via `sendTo('telegram.X', ...)`
-- Anti-spam: max messages per day limit + 1-hour cooldown per alert type
+- Anti-spam: max messages per day limit + configurable cooldown per alert type
 - Night mode: suppress notifications during quiet hours
-- Daily and weekly plant status reports
+- Daily and weekly plant status reports with manual trigger buttons
 - Offline sensor detection
 
 ## Configuration
@@ -36,9 +39,11 @@ Monitor indoor plants via soil moisture, temperature and battery sensors with Te
 
 Add your plants and assign ioBroker state IDs for each sensor. Select a profile — thresholds are applied automatically. You can override individual threshold values per plant.
 
+For automatic watering, assign a **Watering** state ID (e.g. a switch that controls a pump or valve). When soil humidity drops below the minimum threshold, the adapter sets this state to `true` for the configured watering duration, then sets it back to `false`.
+
 ### Profiles Tab
 
-Overview of built-in profiles with recommended thresholds.
+Overview of built-in profiles with recommended thresholds. You can also create **custom profiles** in the table at the top — enter a name and thresholds, then use that name in the "Custom Profile" field in the Plants tab.
 
 ## States
 
@@ -56,6 +61,17 @@ And under `flowers.X`:
 |-------|-------------|
 | `info.connection` | Adapter connection status |
 | `notifications.totalToday` | Notifications sent today |
+| `notifications.sendDailyReport` | Button: trigger daily report manually |
+| `notifications.sendWeeklyReport` | Button: trigger weekly report manually |
+
+### Automatic Watering
+
+Assign a **Watering** state (e.g. `zigbee.0.pump.state`) in the Plants tab. When humidity drops below the minimum:
+1. The adapter sets the watering state to `true`
+2. Waits for the configured **Watering Duration** (minutes)
+3. Sets the state back to `false`
+
+Only one watering cycle runs at a time per plant. Configure the duration in Settings → Automatic Watering.
 
 ## Changelog
 
