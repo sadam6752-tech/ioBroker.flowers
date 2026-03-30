@@ -59,6 +59,9 @@ And under `flowers.X`:
 
 ## Changelog
 
+### 0.3.1 (2026-03-30)
+- (sadam6752-tech) Fixed all lint warnings: complete JSDoc descriptions for all methods
+
 ### 0.3.0 (2026-03-30)
 - (sadam6752-tech) Standard CI/CD workflow using ioBroker testing actions
 - (sadam6752-tech) Added dependabot and automerge workflow

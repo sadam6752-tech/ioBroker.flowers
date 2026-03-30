@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "news": {
+      "0.3.1": {
+        "en": "Fixed all lint warnings: complete JSDoc descriptions",
+        "de": "Alle Lint-Warnungen behoben: vollständige JSDoc-Beschreibungen",
+        "ru": "Исправлены все lint-предупреждения: полные JSDoc-описания",
+        "fr": "Tous les avertissements lint corrigés: descriptions JSDoc complètes",
+        "it": "Tutti gli avvisi lint corretti: descrizioni JSDoc complete",
+        "es": "Todas las advertencias lint corregidas: descripciones JSDoc completas",
+        "pl": "Naprawiono wszystkie ostrzeżenia lint: pełne opisy JSDoc",
+        "pt": "Todos os avisos lint corrigidos: descrições JSDoc completas",
+        "nl": "Alle lint-waarschuwingen opgelost: volledige JSDoc-beschrijvingen",
+        "uk": "Виправлено всі lint-попередження: повні JSDoc-описи",
+        "zh-cn": "修复所有lint警告：完整的JSDoc描述"
+      },
       "0.3.0": {
         "en": "Standard CI/CD workflow, dependabot, release-script, standard test structure",
         "de": "Standard CI/CD Workflow, Dependabot, Release-Script, Standard-Teststruktur",
