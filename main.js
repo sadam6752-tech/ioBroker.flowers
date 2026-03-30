@@ -114,14 +114,20 @@ class FlowersAdapter extends utils.Adapter {
     try {
       if (this._checkTimer) {
         this.clearInterval(this._checkTimer);
+        this._checkTimer = null;
       }
       if (this._dailyReportTimer) {
         this.clearTimeout(this._dailyReportTimer);
+        this._dailyReportTimer = null;
       }
       if (this._weeklyReportTimer) {
         this.clearTimeout(this._weeklyReportTimer);
+        this._weeklyReportTimer = null;
       }
-      this.monitor.unsubscribeAll().catch(() => {});
+      if (this.monitor) {
+        this.monitor.unsubscribeAll().catch(() => {});
+        this.monitor = null;
+      }
       this.setStateAsync("info.connection", { val: false, ack: true }).catch(
         () => {},
       );

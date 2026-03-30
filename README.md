@@ -75,6 +75,11 @@ Only one watering cycle runs at a time per plant. Configure the duration in Sett
 
 ## Changelog
 
+### 0.3.3 (2026-03-30)
+- (sadam6752-tech) Fix object hierarchy: create device/channel parent objects before states
+- (sadam6752-tech) Use correct state roles: value.humidity, value.temperature, value.battery
+- (sadam6752-tech) Improve unload: null timers after clearing, guard monitor null check
+
 ### 0.3.2 (2026-03-30)
 - (sadam6752-tech) Custom profiles: users can create own plant profiles in Profiles tab
 - (sadam6752-tech) Custom profile field in Plants table for direct profile name entry

@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "news": {
+      "0.3.3": {
+        "en": "Fix object hierarchy (device/channel/state), correct state roles (value.humidity, value.temperature, value.battery), improve unload cleanup",
+        "de": "Objekthierarchie korrigiert (device/channel/state), korrekte State-Rollen, verbessertes Aufräumen beim Entladen",
+        "ru": "Исправлена иерархия объектов (device/channel/state), правильные роли состояний, улучшена очистка при выгрузке",
+        "fr": "Correction hiérarchie objets (device/channel/state), rôles d'état corrects, nettoyage amélioré au déchargement",
+        "it": "Corretta gerarchia oggetti (device/channel/state), ruoli stato corretti, pulizia migliorata allo scaricamento",
+        "es": "Corrección jerarquía objetos (device/channel/state), roles de estado correctos, limpieza mejorada al descargar",
+        "pl": "Poprawiono hierarchię obiektów (device/channel/state), poprawne role stanów, ulepszone czyszczenie przy wyładowaniu",
+        "pt": "Correção hierarquia objetos (device/channel/state), funções de estado corretas, limpeza melhorada no descarregamento",
+        "nl": "Objecthiërarchie gecorrigeerd (device/channel/state), correcte state-rollen, verbeterde opruiming bij ontladen",
+        "uk": "Виправлено ієрархію об'єктів (device/channel/state), правильні ролі станів, покращено очищення при вивантаженні",
+        "zh-cn": "修复对象层次结构(device/channel/state)，正确的状态角色，改进卸载清理"
+      },
       "0.3.2": {
         "en": "Custom profiles: users can create own plant profiles in Profiles tab",
         "de": "Benutzerdefinierte Profile: eigene Pflanzenprofile in der Profiles-Registerkarte erstellen",
