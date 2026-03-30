@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.2.9",
+    "version": "0.3.0",
     "news": {
+      "0.3.0": {
+        "en": "Standard CI/CD workflow, dependabot, release-script, standard test structure",
+        "de": "Standard CI/CD Workflow, Dependabot, Release-Script, Standard-Teststruktur",
+        "ru": "Стандартный CI/CD workflow, dependabot, release-script, стандартная структура тестов",
+        "fr": "Workflow CI/CD standard, dependabot, release-script, structure de tests standard",
+        "it": "Workflow CI/CD standard, dependabot, release-script, struttura test standard",
+        "es": "Workflow CI/CD estándar, dependabot, release-script, estructura de tests estándar",
+        "pl": "Standardowy workflow CI/CD, dependabot, release-script, standardowa struktura testów",
+        "pt": "Workflow CI/CD padrão, dependabot, release-script, estrutura de testes padrão",
+        "nl": "Standaard CI/CD workflow, dependabot, release-script, standaard teststructuur",
+        "uk": "Стандартний CI/CD workflow, dependabot, release-script, стандартна структура тестів",
+        "zh-cn": "标准CI/CD工作流、dependabot、release-script、标准测试结构"
+      },
       "0.2.9": {
         "en": "Automatic watering support; UI column width fixes",
         "de": "Automatische Bewässerung; UI-Spaltenbreiten korrigiert",

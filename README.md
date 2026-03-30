@@ -59,6 +59,12 @@ And under `flowers.X`:
 
 ## Changelog
 
+### 0.3.0 (2026-03-30)
+- (sadam6752-tech) Standard CI/CD workflow using ioBroker testing actions
+- (sadam6752-tech) Added dependabot and automerge workflow
+- (sadam6752-tech) Added release-script and standard test structure
+- (sadam6752-tech) Added .releaseconfig.json
+
 ### 0.2.9 (2026-03-22)
 - (sadam6752-tech) Automatic watering support: sensorWatering column, wateringDuration setting
 - (sadam6752-tech) Fixed checkbox column width; increased battery sensor column width
