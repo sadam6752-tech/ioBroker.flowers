@@ -59,6 +59,10 @@ And under `flowers.X`:
 
 ## Changelog
 
+### 0.3.2 (2026-03-30)
+- (sadam6752-tech) Custom profiles: users can create own plant profiles in Profiles tab
+- (sadam6752-tech) Custom profile field in Plants table for direct profile name entry
+
 ### 0.3.1 (2026-03-30)
 - (sadam6752-tech) Fixed all lint warnings: complete JSDoc descriptions for all methods
 

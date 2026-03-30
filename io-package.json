@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "news": {
+      "0.3.2": {
+        "en": "Custom profiles: users can create own plant profiles in Profiles tab",
+        "de": "Benutzerdefinierte Profile: eigene Pflanzenprofile in der Profiles-Registerkarte erstellen",
+        "ru": "Пользовательские профили: создание собственных профилей растений во вкладке Profiles",
+        "fr": "Profils personnalisés: créer ses propres profils de plantes dans l'onglet Profiles",
+        "it": "Profili personalizzati: crea profili piante personalizzati nella scheda Profiles",
+        "es": "Perfiles personalizados: crear perfiles de plantas propios en la pestaña Profiles",
+        "pl": "Własne profile: tworzenie własnych profili roślin w zakładce Profiles",
+        "pt": "Perfis personalizados: criar perfis de plantas próprios na aba Profiles",
+        "nl": "Aangepaste profielen: eigen plantenprofielen aanmaken in het tabblad Profiles",
+        "uk": "Користувацькі профілі: створення власних профілів рослин у вкладці Profiles",
+        "zh-cn": "自定义配置文件：在配置文件选项卡中创建自己的植物配置文件"
+      },
       "0.3.1": {
         "en": "Fixed all lint warnings: complete JSDoc descriptions",
         "de": "Alle Lint-Warnungen behoben: vollständige JSDoc-Beschreibungen",
@@ -139,7 +152,8 @@
     "weeklyReportDay": "1",
     "weeklyReportTime": "10:00",
     "wateringDuration": 3,
-    "plants": []
+    "plants": [],
+    "customProfiles": []
   },
   "objects": [],
   "instanceObjects": [

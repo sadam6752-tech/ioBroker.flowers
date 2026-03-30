@@ -426,6 +426,13 @@
               "attr": "batteryMin",
               "width": "8%",
               "placeholder": "—"
+            },
+            {
+              "type": "text",
+              "title": "Custom Profile",
+              "attr": "customProfile",
+              "width": "10%",
+              "placeholder": "name or leave empty"
             }
           ]
         }
@@ -437,12 +444,75 @@
       "items": {
         "_profilesInfo": {
           "type": "staticText",
-          "text": "Built-in plant profiles with recommended thresholds. Select a profile in the Plants tab — thresholds will be applied automatically. You can override individual values per plant.",
+          "text": "Built-in plant profiles with recommended thresholds. You can also create your own custom profiles below — they will appear in the Plants tab profile selector.",
           "xs": 12,
           "sm": 12,
           "md": 12,
           "lg": 12,
           "xl": 12
+        },
+        "_customProfilesHeader": {
+          "type": "header",
+          "text": "Custom Profiles",
+          "size": 3
+        },
+        "customProfiles": {
+          "type": "table",
+          "label": "Custom Profiles",
+          "xs": 12,
+          "sm": 12,
+          "md": 12,
+          "lg": 12,
+          "xl": 12,
+          "items": [
+            {
+              "type": "text",
+              "title": "Profile Name",
+              "attr": "name",
+              "width": "20%"
+            },
+            {
+              "type": "number",
+              "title": "Hum Min %",
+              "attr": "humidityMin",
+              "width": "10%"
+            },
+            {
+              "type": "number",
+              "title": "Hum Max %",
+              "attr": "humidityMax",
+              "width": "10%"
+            },
+            {
+              "type": "number",
+              "title": "Temp Min °C",
+              "attr": "temperatureMin",
+              "width": "10%"
+            },
+            {
+              "type": "number",
+              "title": "Temp Max °C",
+              "attr": "temperatureMax",
+              "width": "10%"
+            },
+            {
+              "type": "number",
+              "title": "Battery Min %",
+              "attr": "batteryMin",
+              "width": "10%"
+            },
+            {
+              "type": "number",
+              "title": "Watering (days)",
+              "attr": "wateringIntervalDays",
+              "width": "10%"
+            }
+          ]
+        },
+        "_builtinHeader": {
+          "type": "header",
+          "text": "Built-in Profiles (read-only)",
+          "size": 3
         },
         "_r0c0": {
           "type": "staticText",
