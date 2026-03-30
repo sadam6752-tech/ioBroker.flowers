@@ -78,18 +78,32 @@ class FlowersAdapter extends utils.Adapter {
     }
 
     // Test button: send daily report immediately
-    if (id === `${this.namespace}.notifications.sendDailyReport` && state.val === true && !state.ack) {
+    if (
+      id === `${this.namespace}.notifications.sendDailyReport` &&
+      state.val === true &&
+      !state.ack
+    ) {
       this.log.info("flowers: manual daily report triggered");
       await this.notif.sendDailyReport(this.monitor.getPlantStates());
-      await this.setStateAsync("notifications.sendDailyReport", { val: false, ack: true });
+      await this.setStateAsync("notifications.sendDailyReport", {
+        val: false,
+        ack: true,
+      });
       return;
     }
 
     // Test button: send weekly report immediately
-    if (id === `${this.namespace}.notifications.sendWeeklyReport` && state.val === true && !state.ack) {
+    if (
+      id === `${this.namespace}.notifications.sendWeeklyReport` &&
+      state.val === true &&
+      !state.ack
+    ) {
       this.log.info("flowers: manual weekly report triggered");
       await this.notif.sendWeeklyReport(this.monitor.getPlantStates());
-      await this.setStateAsync("notifications.sendWeeklyReport", { val: false, ack: true });
+      await this.setStateAsync("notifications.sendWeeklyReport", {
+        val: false,
+        ack: true,
+      });
       return;
     }
 
