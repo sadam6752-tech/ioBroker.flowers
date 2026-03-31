@@ -12,5 +12,11 @@
             "fileMatch": ["admin/jsonConfig.json", "admin/jsonCustom.json", "admin/jsonTab.json"],
             "url": "https://raw.githubusercontent.com/ioBroker/ioBroker.admin/master/packages/jsonConfig/schemas/jsonConfig.json"
         }
-    ]
+    ],
+    "yaml.schemas": {
+        "https://json.schemastore.org/dependabot-2.0.json": ".github/dependabot.yml",
+        "https://json.schemastore.org/github-action.json": ".github/workflows/*.yml"
+    },
+    "yaml.validate": true,
+    "yaml.schemaStore.enable": false
 }
