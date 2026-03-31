@@ -83,6 +83,9 @@ Only one watering cycle runs at a time per plant. Configure the duration in Sett
 
 ## Changelog
 
+### 0.3.5 (2026-03-31)
+- (sadam6752-tech) Fix .releaseconfig.json plugins format (array instead of object)
+
 ### 0.3.4 (2026-03-31)
 - (sadam6752-tech) Add unit tests for MonitorService, NotificationManager and messages (106 tests total)
 - (sadam6752-tech) Update README with links to compatible devices and Telegram adapter

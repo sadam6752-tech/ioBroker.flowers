@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.3.4",
+    "version": "0.3.5",
     "news": {
+      "0.3.5": {
+        "en": "Fix .releaseconfig.json plugins format (array instead of object)",
+        "de": ".releaseconfig.json plugins Format korrigiert (Array statt Objekt)",
+        "ru": "Исправлен формат plugins в .releaseconfig.json (массив вместо объекта)",
+        "fr": "Correction du format plugins dans .releaseconfig.json (tableau au lieu d'objet)",
+        "it": "Corretto formato plugins in .releaseconfig.json (array invece di oggetto)",
+        "es": "Corregido formato plugins en .releaseconfig.json (array en lugar de objeto)",
+        "pl": "Poprawiono format plugins w .releaseconfig.json (tablica zamiast obiektu)",
+        "pt": "Corrigido formato plugins em .releaseconfig.json (array em vez de objeto)",
+        "nl": "Plugins formaat gecorrigeerd in .releaseconfig.json (array in plaats van object)",
+        "uk": "Виправлено формат plugins у .releaseconfig.json (масив замість об'єкту)",
+        "zh-cn": "修复.releaseconfig.json中plugins格式（数组而非对象）"
+      },
       "0.3.4": {
         "en": "Add unit tests for MonitorService, NotificationManager and messages; update README with device links; remove mocha from devDependencies",
         "de": "Unit-Tests für MonitorService, NotificationManager und messages hinzugefügt; README mit Gerätelinks aktualisiert; mocha aus devDependencies entfernt",
