@@ -7,6 +7,14 @@
 
 Monitor indoor plants via soil moisture, temperature and battery sensors with Telegram notifications.
 
+This adapter works with **any sensor** already integrated in ioBroker (Zigbee, Wi-Fi, Bluetooth, Z-Wave, etc.) — no specific hardware required. Popular compatible sensors:
+
+- [Xiaomi Mi Flora / HHCC Plant Sensor](https://www.mi.com/global/mi-flora) — Bluetooth soil moisture + temperature + light
+- [Zigbee soil moisture sensors](https://www.zigbee2mqtt.io/supported-devices/#s=soil) (e.g. Tuya TS0601, MOES) — via ioBroker Zigbee adapter
+- Any sensor exposing humidity/temperature/battery states in ioBroker
+
+Notifications are sent via the [ioBroker Telegram adapter](https://github.com/ioBroker/ioBroker.telegram).
+
 ## Features
 
 - Monitor multiple plants with individual sensor assignments
@@ -74,6 +82,11 @@ Assign a **Watering** state (e.g. `zigbee.0.pump.state`) in the Plants tab. When
 Only one watering cycle runs at a time per plant. Configure the duration in Settings → Automatic Watering.
 
 ## Changelog
+
+### 0.3.4 (2026-03-31)
+- (sadam6752-tech) Add unit tests for MonitorService, NotificationManager and messages (106 tests total)
+- (sadam6752-tech) Update README with links to compatible devices and Telegram adapter
+- (sadam6752-tech) Remove mocha from devDependencies (already included in @iobroker/testing)
 
 ### 0.3.3 (2026-03-30)
 - (sadam6752-tech) Fix object hierarchy: create device/channel parent objects before states

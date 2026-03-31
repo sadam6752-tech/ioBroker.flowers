@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.3.3",
+    "version": "0.3.4",
     "news": {
+      "0.3.4": {
+        "en": "Add unit tests for MonitorService, NotificationManager and messages; update README with device links; remove mocha from devDependencies",
+        "de": "Unit-Tests für MonitorService, NotificationManager und messages hinzugefügt; README mit Gerätelinks aktualisiert; mocha aus devDependencies entfernt",
+        "ru": "Добавлены unit-тесты для MonitorService, NotificationManager и messages; обновлён README со ссылками на устройства; удалён mocha из devDependencies",
+        "fr": "Tests unitaires ajoutés pour MonitorService, NotificationManager et messages; README mis à jour avec liens appareils; mocha supprimé des devDependencies",
+        "it": "Aggiunti unit test per MonitorService, NotificationManager e messages; README aggiornato con link dispositivi; rimosso mocha da devDependencies",
+        "es": "Tests unitarios añadidos para MonitorService, NotificationManager y messages; README actualizado con enlaces de dispositivos; mocha eliminado de devDependencies",
+        "pl": "Dodano testy jednostkowe dla MonitorService, NotificationManager i messages; zaktualizowano README z linkami do urządzeń; usunięto mocha z devDependencies",
+        "pt": "Testes unitários adicionados para MonitorService, NotificationManager e messages; README atualizado com links de dispositivos; mocha removido de devDependencies",
+        "nl": "Unit-tests toegevoegd voor MonitorService, NotificationManager en messages; README bijgewerkt met apparaatlinks; mocha verwijderd uit devDependencies",
+        "uk": "Додано unit-тести для MonitorService, NotificationManager та messages; оновлено README з посиланнями на пристрої; видалено mocha з devDependencies",
+        "zh-cn": "为MonitorService、NotificationManager和messages添加单元测试；更新README添加设备链接；从devDependencies中删除mocha"
+      },
       "0.3.3": {
         "en": "Fix object hierarchy (device/channel/state), correct state roles (value.humidity, value.temperature, value.battery), improve unload cleanup",
         "de": "Objekthierarchie korrigiert (device/channel/state), korrekte State-Rollen, verbessertes Aufräumen beim Entladen",
@@ -28,32 +41,6 @@
         "nl": "Aangepaste profielen: eigen plantenprofielen aanmaken in het tabblad Profiles",
         "uk": "Користувацькі профілі: створення власних профілів рослин у вкладці Profiles",
         "zh-cn": "自定义配置文件：在配置文件选项卡中创建自己的植物配置文件"
-      },
-      "0.3.1": {
-        "en": "Fixed all lint warnings: complete JSDoc descriptions",
-        "de": "Alle Lint-Warnungen behoben: vollständige JSDoc-Beschreibungen",
-        "ru": "Исправлены все lint-предупреждения: полные JSDoc-описания",
-        "fr": "Tous les avertissements lint corrigés: descriptions JSDoc complètes",
-        "it": "Tutti gli avvisi lint corretti: descrizioni JSDoc complete",
-        "es": "Todas las advertencias lint corregidas: descripciones JSDoc completas",
-        "pl": "Naprawiono wszystkie ostrzeżenia lint: pełne opisy JSDoc",
-        "pt": "Todos os avisos lint corrigidos: descrições JSDoc completas",
-        "nl": "Alle lint-waarschuwingen opgelost: volledige JSDoc-beschrijvingen",
-        "uk": "Виправлено всі lint-попередження: повні JSDoc-описи",
-        "zh-cn": "修复所有lint警告：完整的JSDoc描述"
-      },
-      "0.3.0": {
-        "en": "Standard CI/CD workflow, dependabot, release-script, standard test structure",
-        "de": "Standard CI/CD Workflow, Dependabot, Release-Script, Standard-Teststruktur",
-        "ru": "Стандартный CI/CD workflow, dependabot, release-script, стандартная структура тестов",
-        "fr": "Workflow CI/CD standard, dependabot, release-script, structure de tests standard",
-        "it": "Workflow CI/CD standard, dependabot, release-script, struttura test standard",
-        "es": "Workflow CI/CD estándar, dependabot, release-script, estructura de tests estándar",
-        "pl": "Standardowy workflow CI/CD, dependabot, release-script, standardowa struktura testów",
-        "pt": "Workflow CI/CD padrão, dependabot, release-script, estrutura de testes padrão",
-        "nl": "Standaard CI/CD workflow, dependabot, release-script, standaard teststructuur",
-        "uk": "Стандартний CI/CD workflow, dependabot, release-script, стандартна структура тестів",
-        "zh-cn": "标准CI/CD工作流、dependabot、release-script、标准测试结构"
       },
       "0.2.9": {
         "en": "Automatic watering support; UI column width fixes",
