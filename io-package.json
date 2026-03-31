@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.3.5",
+    "version": "0.3.6",
     "news": {
+      "0.3.6": {
+        "en": "Fix dependabot config for subdirectories (W8905); add auto-merge.yml for dependabot (S8914)",
+        "de": "Dependabot-Konfiguration für Unterverzeichnisse korrigiert; auto-merge.yml hinzugefügt",
+        "ru": "Исправлена конфигурация dependabot для подкаталогов; добавлен auto-merge.yml",
+        "fr": "Correction config dependabot pour sous-répertoires; ajout auto-merge.yml",
+        "it": "Corretta configurazione dependabot per sottodirectory; aggiunto auto-merge.yml",
+        "es": "Corregida configuración dependabot para subdirectorios; añadido auto-merge.yml",
+        "pl": "Poprawiono konfigurację dependabot dla podkatalogów; dodano auto-merge.yml",
+        "pt": "Corrigida configuração dependabot para subdiretórios; adicionado auto-merge.yml",
+        "nl": "Dependabot configuratie gecorrigeerd voor subdirectories; auto-merge.yml toegevoegd",
+        "uk": "Виправлено конфігурацію dependabot для підкаталогів; додано auto-merge.yml",
+        "zh-cn": "修复dependabot子目录配置；添加auto-merge.yml"
+      },
       "0.3.5": {
         "en": "Fix .releaseconfig.json plugins format (array instead of object)",
         "de": ".releaseconfig.json plugins Format korrigiert (Array statt Objekt)",
@@ -54,32 +67,6 @@
         "nl": "Aangepaste profielen: eigen plantenprofielen aanmaken in het tabblad Profiles",
         "uk": "Користувацькі профілі: створення власних профілів рослин у вкладці Profiles",
         "zh-cn": "自定义配置文件：在配置文件选项卡中创建自己的植物配置文件"
-      },
-      "0.2.9": {
-        "en": "Automatic watering support; UI column width fixes",
-        "de": "Automatische Bewässerung; UI-Spaltenbreiten korrigiert",
-        "ru": "Автополив; исправлены ширины колонок UI",
-        "fr": "Arrosage automatique; corrections largeurs colonnes UI",
-        "it": "Irrigazione automatica; correzioni larghezze colonne UI",
-        "es": "Riego automático; correcciones anchos columnas UI",
-        "pl": "Automatyczne podlewanie; poprawki szerokości kolumn UI",
-        "pt": "Rega automática; correções larguras colunas UI",
-        "nl": "Automatisch bewateren; UI kolombreedtes gecorrigeerd",
-        "uk": "Автополив; виправлено ширини колонок UI",
-        "zh-cn": "自动浇水支持；修复UI列宽"
-      },
-      "0.2.8": {
-        "en": "Added sendWeeklyReport button; fixed repochecker issues",
-        "de": "Schaltflaeche sendWeeklyReport hinzugefuegt; Repochecker-Fehler behoben",
-        "ru": "Добавлена кнопка sendWeeklyReport; исправлены ошибки repochecker",
-        "fr": "Bouton sendWeeklyReport ajoute; erreurs repochecker corrigees",
-        "it": "Aggiunto pulsante sendWeeklyReport; corretti errori repochecker",
-        "es": "Boton sendWeeklyReport anadido; errores repochecker corregidos",
-        "pl": "Dodano przycisk sendWeeklyReport; naprawiono bledy repochecker",
-        "pt": "Botao sendWeeklyReport adicionado; erros repochecker corrigidos",
-        "nl": "Knop sendWeeklyReport toegevoegd; repochecker fouten opgelost",
-        "uk": "Додано кнопку sendWeeklyReport; виправлено помилки repochecker",
-        "zh-cn": "添加sendWeeklyReport按钮；修复repochecker问题"
       }
     },
     "titleLang": {

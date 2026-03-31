@@ -83,6 +83,10 @@ Only one watering cycle runs at a time per plant. Configure the duration in Sett
 
 ## Changelog
 
+### 0.3.6 (2026-03-31)
+- (sadam6752-tech) Fix dependabot config to track all package.json in subdirectories (W8905)
+- (sadam6752-tech) Add .github/auto-merge.yml for dependabot automerge configuration (S8914)
+
 ### 0.3.5 (2026-03-31)
 - (sadam6752-tech) Fix .releaseconfig.json plugins format (array instead of object)
 
