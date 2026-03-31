@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "@iobroker/testing": "^5.2.2",
-    "mocha": "^10.7.3"
+    "mocha": "^11.7.5"
   }
 }
