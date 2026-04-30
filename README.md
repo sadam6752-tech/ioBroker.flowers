@@ -83,6 +83,9 @@ Only one watering cycle runs at a time per plant. Configure the duration in Sett
 
 ## Changelog
 
+### 0.3.9 (2026-04-30)
+- (sadam6752-tech) Fix button state roles: set `read=false` for `sendDailyReport` and `sendWeeklyReport` buttons (required by ioBroker role spec)
+
 ### 0.3.8 (2026-04-30)
 - (sadam6752-tech) Auto-cleanup: remove ioBroker objects for plants deleted from config on adapter start
 

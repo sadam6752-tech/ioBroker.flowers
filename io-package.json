@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.3.8",
+    "version": "0.3.9",
     "news": {
+      "0.3.9": {
+        "en": "Fix button state roles: set read=false for sendDailyReport and sendWeeklyReport buttons",
+        "de": "Button-Rollen korrigiert: read=false für sendDailyReport und sendWeeklyReport gesetzt",
+        "ru": "Исправлены роли кнопок: установлен read=false для sendDailyReport и sendWeeklyReport",
+        "fr": "Correction rôles boutons: read=false défini pour sendDailyReport et sendWeeklyReport",
+        "it": "Corretti ruoli pulsanti: impostato read=false per sendDailyReport e sendWeeklyReport",
+        "es": "Corrección roles botones: read=false establecido para sendDailyReport y sendWeeklyReport",
+        "pl": "Poprawiono role przycisków: ustawiono read=false dla sendDailyReport i sendWeeklyReport",
+        "pt": "Correção roles botões: read=false definido para sendDailyReport e sendWeeklyReport",
+        "nl": "Knop-rollen gecorrigeerd: read=false ingesteld voor sendDailyReport en sendWeeklyReport",
+        "uk": "Виправлено ролі кнопок: встановлено read=false для sendDailyReport та sendWeeklyReport",
+        "zh-cn": "修复按钮状态角色：为sendDailyReport和sendWeeklyReport按钮设置read=false"
+      },
       "0.3.8": {
         "en": "Auto-cleanup: remove ioBroker objects for plants deleted from config on adapter start",
         "de": "Auto-Bereinigung: ioBroker-Objekte für aus der Konfiguration gelöschte Pflanzen werden beim Adapterstart entfernt",
@@ -80,19 +93,6 @@
         "nl": "Objecthiërarchie gecorrigeerd (device/channel/state), correcte state-rollen, verbeterde opruiming bij ontladen",
         "uk": "Виправлено ієрархію об'єктів (device/channel/state), правильні ролі станів, покращено очищення при вивантаженні",
         "zh-cn": "修复对象层次结构(device/channel/state)，正确的状态角色，改进卸载清理"
-      },
-      "0.3.2": {
-        "en": "Custom profiles: users can create own plant profiles in Profiles tab",
-        "de": "Benutzerdefinierte Profile: eigene Pflanzenprofile in der Profiles-Registerkarte erstellen",
-        "ru": "Пользовательские профили: создание собственных профилей растений во вкладке Profiles",
-        "fr": "Profils personnalisés: créer ses propres profils de plantes dans l'onglet Profiles",
-        "it": "Profili personalizzati: crea profili piante personalizzati nella scheda Profiles",
-        "es": "Perfiles personalizados: crear perfiles de plantas propios en la pestaña Profiles",
-        "pl": "Własne profile: tworzenie własnych profili roślin w zakładce Profiles",
-        "pt": "Perfis personalizados: criar perfis de plantas próprios na aba Profiles",
-        "nl": "Aangepaste profielen: eigen plantenprofielen aanmaken in het tabblad Profiles",
-        "uk": "Користувацькі профілі: створення власних профілів рослин у вкладці Profiles",
-        "zh-cn": "自定义配置文件：在配置文件选项卡中创建自己的植物配置文件"
       }
     },
     "titleLang": {
@@ -232,7 +232,7 @@
         "role": "button",
         "name": "Send daily report now",
         "type": "boolean",
-        "read": true,
+        "read": false,
         "write": true,
         "def": false
       },
@@ -245,7 +245,7 @@
         "role": "button",
         "name": "Send weekly report now",
         "type": "boolean",
-        "read": true,
+        "read": false,
         "write": true,
         "def": false
       },
