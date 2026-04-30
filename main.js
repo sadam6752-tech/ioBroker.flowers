@@ -37,6 +37,9 @@ class FlowersAdapter extends utils.Adapter {
     this.notif = new NotificationManager(this, lang);
     this.monitor = new MonitorService(this, this.notif, lang);
 
+    // Clean up objects for plants that no longer exist in config
+    await this._cleanupRemovedPlants();
+
     // Subscribe to sensor states
     await this.monitor.subscribeAll();
 
@@ -135,6 +138,79 @@ class FlowersAdapter extends utils.Adapter {
       // ignore
     }
     callback();
+  }
+
+  // ── Cleanup removed plants ─────────────────────────────────────────────
+
+  /**
+   * Delete ioBroker objects for plants that are no longer in the config.
+   * Called on adapter start to keep the object tree in sync with config.
+   */
+  async _cleanupRemovedPlants() {
+    try {
+      // Build set of safe names for currently configured plants
+      const configuredNames = new Set(
+        (this.config.plants || []).map((p) =>
+          p.name.replace(/[^a-zA-Z0-9_]/g, "_").toLowerCase(),
+        ),
+      );
+
+      // Get all existing objects under plants.*
+      const existingObjects = await this.getObjectViewAsync("system", "state", {
+        startkey: `${this.namespace}.plants.`,
+        endkey: `${this.namespace}.plants.\u9999`,
+      });
+
+      if (!existingObjects || !existingObjects.rows) {
+        return;
+      }
+
+      // Collect plant channel names that exist in objects but not in config
+      const toDelete = new Set();
+      for (const row of existingObjects.rows) {
+        const id = row.id; // e.g. flowers.0.plants.ficus.humidity
+        const relative = id.slice(`${this.namespace}.`.length); // plants.ficus.humidity
+        const parts = relative.split(".");
+        if (parts.length >= 2) {
+          const plantSafeName = parts[1];
+          if (!configuredNames.has(plantSafeName)) {
+            toDelete.add(plantSafeName);
+          }
+        }
+      }
+
+      // Delete states, channel and device objects for each removed plant
+      for (const safeName of toDelete) {
+        this.log.info(
+          `flowers: removing objects for deleted plant "${safeName}"`,
+        );
+        // Delete all states under plants.<safeName>
+        for (const sensor of ["humidity", "temperature", "battery"]) {
+          try {
+            await this.delObjectAsync(`plants.${safeName}.${sensor}`);
+          } catch {
+            // ignore if not exists
+          }
+        }
+        // Delete device object plants.<safeName>
+        try {
+          await this.delObjectAsync(`plants.${safeName}`);
+        } catch {
+          // ignore if not exists
+        }
+      }
+
+      // If no plants remain, also remove the plants channel
+      if (configuredNames.size === 0) {
+        try {
+          await this.delObjectAsync("plants");
+        } catch {
+          // ignore
+        }
+      }
+    } catch (err) {
+      this.log.warn(`flowers: cleanup error: ${err.message}`);
+    }
   }
 
   // ── Report scheduling ──────────────────────────────────────────────────

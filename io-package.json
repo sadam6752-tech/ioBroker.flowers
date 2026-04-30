@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.3.7",
+    "version": "0.3.8",
     "news": {
+      "0.3.8": {
+        "en": "Auto-cleanup: remove ioBroker objects for plants deleted from config on adapter start",
+        "de": "Auto-Bereinigung: ioBroker-Objekte für aus der Konfiguration gelöschte Pflanzen werden beim Adapterstart entfernt",
+        "ru": "Автоочистка: объекты ioBroker для удалённых из конфига растений удаляются при старте адаптера",
+        "fr": "Nettoyage automatique: suppression des objets ioBroker pour les plantes supprimées de la config au démarrage",
+        "it": "Pulizia automatica: rimozione oggetti ioBroker per piante eliminate dalla config all'avvio",
+        "es": "Limpieza automática: eliminación de objetos ioBroker para plantas borradas de la config al iniciar",
+        "pl": "Auto-czyszczenie: usuwanie obiektów ioBroker dla roślin usuniętych z konfiguracji przy starcie",
+        "pt": "Limpeza automática: remoção de objetos ioBroker para plantas removidas da config no arranque",
+        "nl": "Auto-opruiming: ioBroker-objecten voor verwijderde planten worden bij adapterstart verwijderd",
+        "uk": "Автоочищення: об'єкти ioBroker для видалених з конфігу рослин видаляються при старті адаптера",
+        "zh-cn": "自动清理：适配器启动时删除配置中已移除植物的ioBroker对象"
+      },
       "0.3.7": {
         "en": "Fix E8915: add dependabot cooldown (default-days: 7); update CI/CD to Node.js 24; remove redundant eslint devDependency; add CHANGELOG_OLD.md",
         "de": "E8915 behoben: Dependabot-Cooldown hinzugefügt; CI/CD auf Node.js 24 aktualisiert; redundante eslint devDependency entfernt; CHANGELOG_OLD.md hinzugefügt",

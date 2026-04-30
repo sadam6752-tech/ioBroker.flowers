@@ -83,6 +83,9 @@ Only one watering cycle runs at a time per plant. Configure the duration in Sett
 
 ## Changelog
 
+### 0.3.8 (2026-04-30)
+- (sadam6752-tech) Auto-cleanup: remove ioBroker objects for plants deleted from config on adapter start
+
 ### 0.3.7 (2026-04-30)
 - (sadam6752-tech) Fix E8915: add dependabot cooldown (`default-days: 7`) for npm ecosystem
 - (sadam6752-tech) Update CI/CD: `check-and-lint` and `deploy` steps to Node.js 24.x
