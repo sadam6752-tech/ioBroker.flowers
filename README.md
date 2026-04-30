@@ -83,6 +83,12 @@ Only one watering cycle runs at a time per plant. Configure the duration in Sett
 
 ## Changelog
 
+### 0.3.7 (2026-04-30)
+- (sadam6752-tech) Fix E8915: add dependabot cooldown (`default-days: 7`) for npm ecosystem
+- (sadam6752-tech) Update CI/CD: `check-and-lint` and `deploy` steps to Node.js 24.x
+- (sadam6752-tech) Remove redundant `eslint` devDependency (included via `@iobroker/eslint-config`)
+- (sadam6752-tech) Add CHANGELOG_OLD.md for older changelog entries
+
 ### 0.3.6 (2026-03-31)
 - (sadam6752-tech) Fix dependabot config to track all package.json in subdirectories (W8905)
 - (sadam6752-tech) Add .github/auto-merge.yml for dependabot automerge configuration (S8914)
@@ -104,45 +110,7 @@ Only one watering cycle runs at a time per plant. Configure the duration in Sett
 - (sadam6752-tech) Custom profiles: users can create own plant profiles in Profiles tab
 - (sadam6752-tech) Custom profile field in Plants table for direct profile name entry
 
-### 0.3.1 (2026-03-30)
-- (sadam6752-tech) Fixed all lint warnings: complete JSDoc descriptions for all methods
-
-### 0.3.0 (2026-03-30)
-- (sadam6752-tech) Standard CI/CD workflow using ioBroker testing actions
-- (sadam6752-tech) Added dependabot and automerge workflow
-- (sadam6752-tech) Added release-script and standard test structure
-- (sadam6752-tech) Added .releaseconfig.json
-
-### 0.2.9 (2026-03-22)
-- (sadam6752-tech) Automatic watering support: sensorWatering column, wateringDuration setting
-- (sadam6752-tech) Fixed checkbox column width; increased battery sensor column width
-
-### 0.2.8 (2026-03-21)
-* (sadam6752-tech) Added sendWeeklyReport button for manual weekly report trigger
-* (sadam6752-tech) Fixed repochecker issues: grid values, dependencies
-
-### 0.2.7 (2026-03-21)
-* (sadam6752-tech) Fixed weekly report header; separated daily/weekly report logic
-
-### 0.2.6 (2026-03-21)
-* (sadam6752-tech) Added dividers to daily/weekly report format
-
-### 0.2.5 (2026-03-21)
-* (sadam6752-tech) Added sendDailyReport button for manual report trigger
-
-### 0.2.4 (2026-03-21)
-* (sadam6752-tech) Fixed Profiles tab causing dirty state on open
-
-### 0.2.3 (2026-03-21)
-* (sadam6752-tech) Increased Bat Min column width; allow empty threshold fields
-
-### 0.2.2 (2026-03-21)
-* (sadam6752-tech) Allow empty threshold fields - profile values used as fallback
-
-### 0.2.0 (2026-03-21)
-* (sadam6752-tech) Added 4 new plant profiles; translations for all 11 languages
-### 0.1.0 (2026-03-21)
-- Initial release: plant monitoring with Telegram notifications, configurable thresholds, night mode and periodic reports
+For older changelog entries see [CHANGELOG_OLD.md](CHANGELOG_OLD.md).
 
 ## License
 
