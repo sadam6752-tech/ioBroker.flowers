@@ -192,7 +192,7 @@ class FlowersAdapter extends utils.Adapter {
             // ignore if not exists
           }
         }
-        // Delete device object plants.<safeName>
+        // Delete channel object plants.<safeName>
         try {
           await this.delObjectAsync(`plants.${safeName}`);
         } catch {

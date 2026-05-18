@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.3.9",
+    "version": "0.4.0",
     "news": {
+      "0.4.0": {
+        "en": "Fix object hierarchy: change plants container from channel to folder type to allow device children",
+        "de": "Objekthierarchie korrigiert: plants-Container von channel auf folder geändert, damit device-Kinder erlaubt sind",
+        "ru": "Исправлена иерархия объектов: контейнер plants изменён с channel на folder для поддержки дочерних device",
+        "fr": "Correction hiérarchie objets: conteneur plants changé de channel à folder pour autoriser les enfants device",
+        "it": "Corretta gerarchia oggetti: contenitore plants cambiato da channel a folder per consentire figli device",
+        "es": "Corrección jerarquía objetos: contenedor plants cambiado de channel a folder para permitir hijos device",
+        "pl": "Poprawiono hierarchię obiektów: kontener plants zmieniony z channel na folder, aby umożliwić dzieci device",
+        "pt": "Correção hierarquia objetos: contentor plants alterado de channel para folder para permitir filhos device",
+        "nl": "Objecthiërarchie gecorrigeerd: plants-container gewijzigd van channel naar folder om device-kinderen toe te staan",
+        "uk": "Виправлено ієрархію об'єктів: контейнер plants змінено з channel на folder для підтримки дочірніх device",
+        "zh-cn": "修复对象层次结构：将plants容器从channel类型改为folder类型以允许device子对象"
+      },
       "0.3.9": {
         "en": "Fix button state roles: set read=false for sendDailyReport and sendWeeklyReport buttons",
         "de": "Button-Rollen korrigiert: read=false für sendDailyReport und sendWeeklyReport gesetzt",
@@ -80,19 +93,6 @@
         "nl": "Unit-tests toegevoegd voor MonitorService, NotificationManager en messages; README bijgewerkt met apparaatlinks; mocha verwijderd uit devDependencies",
         "uk": "Додано unit-тести для MonitorService, NotificationManager та messages; оновлено README з посиланнями на пристрої; видалено mocha з devDependencies",
         "zh-cn": "为MonitorService、NotificationManager和messages添加单元测试；更新README添加设备链接；从devDependencies中删除mocha"
-      },
-      "0.3.3": {
-        "en": "Fix object hierarchy (device/channel/state), correct state roles (value.humidity, value.temperature, value.battery), improve unload cleanup",
-        "de": "Objekthierarchie korrigiert (device/channel/state), korrekte State-Rollen, verbessertes Aufräumen beim Entladen",
-        "ru": "Исправлена иерархия объектов (device/channel/state), правильные роли состояний, улучшена очистка при выгрузке",
-        "fr": "Correction hiérarchie objets (device/channel/state), rôles d'état corrects, nettoyage amélioré au déchargement",
-        "it": "Corretta gerarchia oggetti (device/channel/state), ruoli stato corretti, pulizia migliorata allo scaricamento",
-        "es": "Corrección jerarquía objetos (device/channel/state), roles de estado correctos, limpieza mejorada al descargar",
-        "pl": "Poprawiono hierarchię obiektów (device/channel/state), poprawne role stanów, ulepszone czyszczenie przy wyładowaniu",
-        "pt": "Correção hierarquia objetos (device/channel/state), funções de estado corretas, limpeza melhorada no descarregamento",
-        "nl": "Objecthiërarchie gecorrigeerd (device/channel/state), correcte state-rollen, verbeterde opruiming bij ontladen",
-        "uk": "Виправлено ієрархію об'єктів (device/channel/state), правильні ролі станів, покращено очищення при вивантаженні",
-        "zh-cn": "修复对象层次结构(device/channel/state)，正确的状态角色，改进卸载清理"
       }
     },
     "titleLang": {
