@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "news": {
+      "0.4.1": {
+        "en": "Fix W5612: add missing i18n keys; update engines.node to >=22; add prettier.config.mjs, tsconfig.json, @types/node; update devDependencies",
+        "de": "W5612 behoben: fehlende i18n-Schlüssel hinzugefügt; engines.node auf >=22 aktualisiert; prettier.config.mjs, tsconfig.json, @types/node hinzugefügt; devDependencies aktualisiert",
+        "ru": "Исправление W5612: добавлены отсутствующие ключи i18n; engines.node обновлён до >=22; добавлены prettier.config.mjs, tsconfig.json, @types/node; обновлены devDependencies",
+        "fr": "Fix W5612: clés i18n manquantes ajoutées; engines.node mis à jour à >=22; prettier.config.mjs, tsconfig.json, @types/node ajoutés; devDependencies mis à jour",
+        "it": "Fix W5612: chiavi i18n mancanti aggiunti; engines.node aggiornato a >=22; prettier.config.mjs, tsconfig.json, @types/node aggiunti; devDependencies aggiornati",
+        "es": "Fix W5612: claves i18n faltantes añadidas; engines.node actualizado a >=22; prettier.config.mjs, tsconfig.json, @types/node añadidos; devDependencies actualizados",
+        "pl": "Naprawa W5612: dodano brakujące klucze i18n; engines.node zaktualizowano do >=22; dodano prettier.config.mjs, tsconfig.json, @types/node; zaktualizowano devDependencies",
+        "pt": "Fix W5612: chaves i18n em falta adicionadas; engines.node atualizado para >=22; prettier.config.mjs, tsconfig.json, @types/node adicionados; devDependencies atualizados",
+        "nl": "Fix W5612: ontbrekende i18n-sleutels toegevoegd; engines.node bijgewerkt naar >=22; prettier.config.mjs, tsconfig.json, @types/node toegevoegd; devDependencies bijgewerkt",
+        "uk": "Виправлення W5612: додано відсутні ключі i18n; engines.node оновлено до >=22; додано prettier.config.mjs, tsconfig.json, @types/node; оновлено devDependencies",
+        "zh-cn": "修复W5612：添加缺失的i18n键；将engines.node更新为>=22；添加prettier.config.mjs、tsconfig.json、@types/node；更新devDependencies"
+      },
       "0.4.0": {
         "en": "Fix object hierarchy: change plants container from channel to folder type to allow device children",
         "de": "Objekthierarchie korrigiert: plants-Container von channel auf folder geändert, damit device-Kinder erlaubt sind",

@@ -56,5 +56,8 @@
   "Sansevieria Laurentii": "Sansevieria Laurentii",
   "Automatic Watering": "Automatic Watering",
   "Watering Duration (min)": "Watering Duration (min)",
-  "Watering": "Watering"
+  "Watering": "Watering",
+  "name or leave empty": "name or leave empty",
+  "Custom Profiles": "Custom Profiles",
+  "user1,user2": "user1,user2"
 }
