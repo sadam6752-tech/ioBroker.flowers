@@ -1,269 +1,247 @@
-"use strict";
+'use strict';
 
-const utils = require("@iobroker/adapter-core");
-const NotificationManager = require("./lib/notification-manager");
-const MonitorService = require("./lib/monitor-service");
+const utils = require('@iobroker/adapter-core');
+const NotificationManager = require('./lib/notification-manager');
+const MonitorService = require('./lib/monitor-service');
 
 class FlowersAdapter extends utils.Adapter {
-  constructor(options) {
-    super({ ...options, name: "flowers" });
+    constructor(options) {
+        super({ ...options, name: 'flowers' });
 
-    this.notif = null;
-    this.monitor = null;
-    this._checkTimer = null;
-    this._dailyReportTimer = null;
-    this._weeklyReportTimer = null;
-
-    this.on("ready", this.onReady.bind(this));
-    this.on("stateChange", this.onStateChange.bind(this));
-    this.on("unload", this.onUnload.bind(this));
-  }
-
-  async onReady() {
-    this.log.info("flowers adapter starting...");
-
-    // Read system language
-    let lang = "en";
-    try {
-      const sysConfig = await this.getForeignObjectAsync("system.config");
-      if (sysConfig && sysConfig.common && sysConfig.common.language) {
-        lang = sysConfig.common.language;
-      }
-    } catch {
-      // fallback to en
-    }
-    this.log.debug(`flowers: system language = ${lang}`);
-
-    this.notif = new NotificationManager(this, lang);
-    this.monitor = new MonitorService(this, this.notif, lang);
-
-    // Clean up objects for plants that no longer exist in config
-    await this._cleanupRemovedPlants();
-
-    // Subscribe to sensor states
-    await this.monitor.subscribeAll();
-
-    // Subscribe to control states
-    await this.subscribeStatesAsync("notifications.sendDailyReport");
-    await this.subscribeStatesAsync("notifications.sendWeeklyReport");
-
-    // Set connection indicator
-    await this.setStateAsync("info.connection", { val: true, ack: true });
-
-    // Start periodic check
-    const intervalMin = parseInt(this.config.checkInterval) || 60;
-    this._checkTimer = this.setInterval(
-      async () => {
-        await this.monitor.checkAll();
-      },
-      intervalMin * 60 * 1000,
-    );
-
-    // Run initial check
-    await this.monitor.checkAll();
-
-    // Schedule daily report
-    if (this.config.dailyReportEnabled) {
-      this._scheduleDailyReport();
-    }
-
-    // Schedule weekly report
-    if (this.config.weeklyReportEnabled) {
-      this._scheduleWeeklyReport();
-    }
-
-    this.log.info(`flowers adapter ready. Check interval: ${intervalMin} min`);
-  }
-
-  async onStateChange(id, state) {
-    if (!state || state.val === null || state.val === undefined) {
-      return;
-    }
-
-    // Test button: send daily report immediately
-    if (
-      id === `${this.namespace}.notifications.sendDailyReport` &&
-      state.val === true &&
-      !state.ack
-    ) {
-      this.log.info("flowers: manual daily report triggered");
-      await this.notif.sendDailyReport(this.monitor.getPlantStates());
-      await this.setStateAsync("notifications.sendDailyReport", {
-        val: false,
-        ack: true,
-      });
-      return;
-    }
-
-    // Test button: send weekly report immediately
-    if (
-      id === `${this.namespace}.notifications.sendWeeklyReport` &&
-      state.val === true &&
-      !state.ack
-    ) {
-      this.log.info("flowers: manual weekly report triggered");
-      await this.notif.sendWeeklyReport(this.monitor.getPlantStates());
-      await this.setStateAsync("notifications.sendWeeklyReport", {
-        val: false,
-        ack: true,
-      });
-      return;
-    }
-
-    await this.monitor.onStateChange(id, state);
-  }
-
-  onUnload(callback) {
-    try {
-      if (this._checkTimer) {
-        this.clearInterval(this._checkTimer);
-        this._checkTimer = null;
-      }
-      if (this._dailyReportTimer) {
-        this.clearTimeout(this._dailyReportTimer);
-        this._dailyReportTimer = null;
-      }
-      if (this._weeklyReportTimer) {
-        this.clearTimeout(this._weeklyReportTimer);
-        this._weeklyReportTimer = null;
-      }
-      if (this.monitor) {
-        this.monitor.unsubscribeAll().catch(() => {});
+        this.notif = null;
         this.monitor = null;
-      }
-      this.setStateAsync("info.connection", { val: false, ack: true }).catch(
-        () => {},
-      );
-    } catch {
-      // ignore
+        this._checkTimer = null;
+        this._dailyReportTimer = null;
+        this._weeklyReportTimer = null;
+
+        this.on('ready', this.onReady.bind(this));
+        this.on('stateChange', this.onStateChange.bind(this));
+        this.on('unload', this.onUnload.bind(this));
     }
-    callback();
-  }
 
-  // ── Cleanup removed plants ─────────────────────────────────────────────
+    async onReady() {
+        this.log.info('flowers adapter starting...');
 
-  /**
-   * Delete ioBroker objects for plants that are no longer in the config.
-   * Called on adapter start to keep the object tree in sync with config.
-   */
-  async _cleanupRemovedPlants() {
-    try {
-      // Build set of safe names for currently configured plants
-      const configuredNames = new Set(
-        (this.config.plants || []).map((p) =>
-          p.name.replace(/[^a-zA-Z0-9_]/g, "_").toLowerCase(),
-        ),
-      );
-
-      // Get all existing objects under plants.*
-      const existingObjects = await this.getObjectViewAsync("system", "state", {
-        startkey: `${this.namespace}.plants.`,
-        endkey: `${this.namespace}.plants.\u9999`,
-      });
-
-      if (!existingObjects || !existingObjects.rows) {
-        return;
-      }
-
-      // Collect plant channel names that exist in objects but not in config
-      const toDelete = new Set();
-      for (const row of existingObjects.rows) {
-        const id = row.id; // e.g. flowers.0.plants.ficus.humidity
-        const relative = id.slice(`${this.namespace}.`.length); // plants.ficus.humidity
-        const parts = relative.split(".");
-        if (parts.length >= 2) {
-          const plantSafeName = parts[1];
-          if (!configuredNames.has(plantSafeName)) {
-            toDelete.add(plantSafeName);
-          }
+        // Read system language
+        let lang = 'en';
+        try {
+            const sysConfig = await this.getForeignObjectAsync('system.config');
+            if (sysConfig && sysConfig.common && sysConfig.common.language) {
+                lang = sysConfig.common.language;
+            }
+        } catch {
+            // fallback to en
         }
-      }
+        this.log.debug(`flowers: system language = ${lang}`);
 
-      // Delete states, channel and device objects for each removed plant
-      for (const safeName of toDelete) {
-        this.log.info(
-          `flowers: removing objects for deleted plant "${safeName}"`,
+        this.notif = new NotificationManager(this, lang);
+        this.monitor = new MonitorService(this, this.notif, lang);
+
+        // Clean up objects for plants that no longer exist in config
+        await this._cleanupRemovedPlants();
+
+        // Subscribe to sensor states
+        await this.monitor.subscribeAll();
+
+        // Subscribe to control states
+        await this.subscribeStatesAsync('notifications.sendDailyReport');
+        await this.subscribeStatesAsync('notifications.sendWeeklyReport');
+
+        // Set connection indicator
+        await this.setStateAsync('info.connection', { val: true, ack: true });
+
+        // Start periodic check
+        const intervalMin = parseInt(this.config.checkInterval) || 60;
+        this._checkTimer = this.setInterval(
+            async () => {
+                await this.monitor.checkAll();
+            },
+            intervalMin * 60 * 1000,
         );
-        // Delete all states under plants.<safeName>
-        for (const sensor of ["humidity", "temperature", "battery"]) {
-          try {
-            await this.delObjectAsync(`plants.${safeName}.${sensor}`);
-          } catch {
-            // ignore if not exists
-          }
-        }
-        // Delete channel object plants.<safeName>
-        try {
-          await this.delObjectAsync(`plants.${safeName}`);
-        } catch {
-          // ignore if not exists
-        }
-      }
 
-      // If no plants remain, also remove the plants channel
-      if (configuredNames.size === 0) {
-        try {
-          await this.delObjectAsync("plants");
-        } catch {
-          // ignore
+        // Run initial check
+        await this.monitor.checkAll();
+
+        // Schedule daily report
+        if (this.config.dailyReportEnabled) {
+            this._scheduleDailyReport();
         }
-      }
-    } catch (err) {
-      this.log.warn(`flowers: cleanup error: ${err.message}`);
-    }
-  }
 
-  // ── Report scheduling ──────────────────────────────────────────────────
+        // Schedule weekly report
+        if (this.config.weeklyReportEnabled) {
+            this._scheduleWeeklyReport();
+        }
 
-  _scheduleDailyReport() {
-    const [h, m] = (this.config.dailyReportTime || "20:00")
-      .split(":")
-      .map(Number);
-    const now = new Date();
-    const next = new Date(now);
-    next.setHours(h, m, 0, 0);
-    if (next <= now) {
-      next.setDate(next.getDate() + 1);
+        this.log.info(`flowers adapter ready. Check interval: ${intervalMin} min`);
     }
 
-    const delay = next - now;
-    this._dailyReportTimer = this.setTimeout(async () => {
-      await this.notif.sendDailyReport(this.monitor.getPlantStates());
-      // reschedule for next day
-      this._scheduleDailyReport();
-    }, delay);
+    async onStateChange(id, state) {
+        if (!state || state.val === null || state.val === undefined) {
+            return;
+        }
 
-    this.log.debug(
-      `Daily report scheduled in ${Math.round(delay / 60000)} min`,
-    );
-  }
+        // Test button: send daily report immediately
+        if (id === `${this.namespace}.notifications.sendDailyReport` && state.val === true && !state.ack) {
+            this.log.info('flowers: manual daily report triggered');
+            await this.notif.sendDailyReport(this.monitor.getPlantStates());
+            await this.setStateAsync('notifications.sendDailyReport', {
+                val: false,
+                ack: true,
+            });
+            return;
+        }
 
-  _scheduleWeeklyReport() {
-    const targetDay = parseInt(this.config.weeklyReportDay ?? "1"); // 0=Sun..6=Sat
-    const [h, m] = (this.config.weeklyReportTime || "10:00")
-      .split(":")
-      .map(Number);
-    const now = new Date();
-    const next = new Date(now);
-    next.setHours(h, m, 0, 0);
+        // Test button: send weekly report immediately
+        if (id === `${this.namespace}.notifications.sendWeeklyReport` && state.val === true && !state.ack) {
+            this.log.info('flowers: manual weekly report triggered');
+            await this.notif.sendWeeklyReport(this.monitor.getPlantStates());
+            await this.setStateAsync('notifications.sendWeeklyReport', {
+                val: false,
+                ack: true,
+            });
+            return;
+        }
 
-    const daysUntil = (targetDay - now.getDay() + 7) % 7 || 7;
-    next.setDate(now.getDate() + daysUntil);
+        await this.monitor.onStateChange(id, state);
+    }
 
-    const delay = next - now;
-    this._weeklyReportTimer = this.setTimeout(async () => {
-      await this.notif.sendWeeklyReport(this.monitor.getPlantStates());
-      this._scheduleWeeklyReport();
-    }, delay);
+    onUnload(callback) {
+        try {
+            if (this._checkTimer) {
+                this.clearInterval(this._checkTimer);
+                this._checkTimer = null;
+            }
+            if (this._dailyReportTimer) {
+                this.clearTimeout(this._dailyReportTimer);
+                this._dailyReportTimer = null;
+            }
+            if (this._weeklyReportTimer) {
+                this.clearTimeout(this._weeklyReportTimer);
+                this._weeklyReportTimer = null;
+            }
+            if (this.monitor) {
+                this.monitor.unsubscribeAll().catch(() => {});
+                this.monitor = null;
+            }
+            this.setStateAsync('info.connection', { val: false, ack: true }).catch(() => {});
+        } catch {
+            // ignore
+        }
+        callback();
+    }
 
-    this.log.debug(
-      `Weekly report scheduled in ${Math.round(delay / 60000)} min`,
-    );
-  }
+    // ── Cleanup removed plants ─────────────────────────────────────────────
+
+    /**
+     * Delete ioBroker objects for plants that are no longer in the config.
+     * Called on adapter start to keep the object tree in sync with config.
+     */
+    async _cleanupRemovedPlants() {
+        try {
+            // Build set of safe names for currently configured plants
+            const configuredNames = new Set(
+                (this.config.plants || []).map(p => p.name.replace(/[^a-zA-Z0-9_]/g, '_').toLowerCase()),
+            );
+
+            // Get all existing objects under plants.*
+            const existingObjects = await this.getObjectViewAsync('system', 'state', {
+                startkey: `${this.namespace}.plants.`,
+                endkey: `${this.namespace}.plants.\u9999`,
+            });
+
+            if (!existingObjects || !existingObjects.rows) {
+                return;
+            }
+
+            // Collect plant channel names that exist in objects but not in config
+            const toDelete = new Set();
+            for (const row of existingObjects.rows) {
+                const id = row.id; // e.g. flowers.0.plants.ficus.humidity
+                const relative = id.slice(`${this.namespace}.`.length); // plants.ficus.humidity
+                const parts = relative.split('.');
+                if (parts.length >= 2) {
+                    const plantSafeName = parts[1];
+                    if (!configuredNames.has(plantSafeName)) {
+                        toDelete.add(plantSafeName);
+                    }
+                }
+            }
+
+            // Delete states, channel and device objects for each removed plant
+            for (const safeName of toDelete) {
+                this.log.info(`flowers: removing objects for deleted plant "${safeName}"`);
+                // Delete all states under plants.<safeName>
+                for (const sensor of ['humidity', 'temperature', 'battery']) {
+                    try {
+                        await this.delObjectAsync(`plants.${safeName}.${sensor}`);
+                    } catch {
+                        // ignore if not exists
+                    }
+                }
+                // Delete channel object plants.<safeName>
+                try {
+                    await this.delObjectAsync(`plants.${safeName}`);
+                } catch {
+                    // ignore if not exists
+                }
+            }
+
+            // If no plants remain, also remove the plants channel
+            if (configuredNames.size === 0) {
+                try {
+                    await this.delObjectAsync('plants');
+                } catch {
+                    // ignore
+                }
+            }
+        } catch (err) {
+            this.log.warn(`flowers: cleanup error: ${err.message}`);
+        }
+    }
+
+    // ── Report scheduling ──────────────────────────────────────────────────
+
+    _scheduleDailyReport() {
+        const [h, m] = (this.config.dailyReportTime || '20:00').split(':').map(Number);
+        const now = new Date();
+        const next = new Date(now);
+        next.setHours(h, m, 0, 0);
+        if (next <= now) {
+            next.setDate(next.getDate() + 1);
+        }
+
+        const delay = next - now;
+        this._dailyReportTimer = this.setTimeout(async () => {
+            await this.notif.sendDailyReport(this.monitor.getPlantStates());
+            // reschedule for next day
+            this._scheduleDailyReport();
+        }, delay);
+
+        this.log.debug(`Daily report scheduled in ${Math.round(delay / 60000)} min`);
+    }
+
+    _scheduleWeeklyReport() {
+        const targetDay = parseInt(this.config.weeklyReportDay ?? '1'); // 0=Sun..6=Sat
+        const [h, m] = (this.config.weeklyReportTime || '10:00').split(':').map(Number);
+        const now = new Date();
+        const next = new Date(now);
+        next.setHours(h, m, 0, 0);
+
+        const daysUntil = (targetDay - now.getDay() + 7) % 7 || 7;
+        next.setDate(now.getDate() + daysUntil);
+
+        const delay = next - now;
+        this._weeklyReportTimer = this.setTimeout(async () => {
+            await this.notif.sendWeeklyReport(this.monitor.getPlantStates());
+            this._scheduleWeeklyReport();
+        }, delay);
+
+        this.log.debug(`Weekly report scheduled in ${Math.round(delay / 60000)} min`);
+    }
 }
 
 if (require.main !== module) {
-  module.exports = (options) => new FlowersAdapter(options);
+    module.exports = options => new FlowersAdapter(options);
 } else {
-  new FlowersAdapter();
+    new FlowersAdapter();
 }
