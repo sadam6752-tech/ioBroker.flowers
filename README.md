@@ -83,6 +83,12 @@ Only one watering cycle runs at a time per plant. Configure the duration in Sett
 
 ## Changelog
 
+### 0.4.2
+- (sadam6752-tech) Update @iobroker/adapter-core to 3.4.3
+- (sadam6752-tech) Downgrade @types/node to ^22 (fix W0066)
+- (sadam6752-tech) Add @tsconfig/node22 with extends in tsconfig.json (fix S0085/S0088)
+- (sadam6752-tech) Trim old news entries (fix W1032)
+
 ### 0.4.1 (2026-06-20)
 - (sadam6752-tech) Fix W5612: add missing i18n keys for Custom Profiles and placeholder fields
 - (sadam6752-tech) Update engines.node to >=22; remove Node.js 20 from test matrix

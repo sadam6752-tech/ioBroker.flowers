@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "news": {
+      "0.4.2": {
+        "en": "Update @iobroker/adapter-core to 3.4.3; downgrade @types/node to ^22; add @tsconfig/node22 with extends in tsconfig.json; trim old news entries",
+        "de": "@iobroker/adapter-core auf 3.4.3 aktualisiert; @types/node auf ^22 heruntergestuft; @tsconfig/node22 mit extends in tsconfig.json hinzugefügt; alte News-Einträge entfernt",
+        "ru": "Обновлён @iobroker/adapter-core до 3.4.3; @types/node понижен до ^22; добавлен @tsconfig/node22 с extends в tsconfig.json; удалены старые записи news",
+        "fr": "Mise à jour @iobroker/adapter-core vers 3.4.3; @types/node rétrogradé à ^22; ajout @tsconfig/node22 avec extends dans tsconfig.json; suppression anciennes entrées news",
+        "it": "Aggiornamento @iobroker/adapter-core a 3.4.3; @types/node declassato a ^22; aggiunto @tsconfig/node22 con extends in tsconfig.json; rimosse vecchie voci news",
+        "es": "Actualización @iobroker/adapter-core a 3.4.3; @types/node degradado a ^22; añadido @tsconfig/node22 con extends en tsconfig.json; eliminadas entradas news antiguas",
+        "pl": "Aktualizacja @iobroker/adapter-core do 3.4.3; @types/node obniżono do ^22; dodano @tsconfig/node22 z extends w tsconfig.json; usunięto stare wpisy news",
+        "pt": "Atualização @iobroker/adapter-core para 3.4.3; @types/node rebaixado para ^22; adicionado @tsconfig/node22 com extends em tsconfig.json; removidas entradas news antigas",
+        "nl": "@iobroker/adapter-core bijgewerkt naar 3.4.3; @types/node teruggebracht naar ^22; @tsconfig/node22 met extends toegevoegd in tsconfig.json; oude nieuws-items verwijderd",
+        "uk": "Оновлено @iobroker/adapter-core до 3.4.3; @types/node знижено до ^22; додано @tsconfig/node22 з extends у tsconfig.json; видалено старі записи news",
+        "zh-cn": "更新@iobroker/adapter-core至3.4.3；将@types/node降级至^22；在tsconfig.json中添加@tsconfig/node22和extends；删除旧的news条目"
+      },
       "0.4.1": {
         "en": "Fix W5612: add missing i18n keys; update engines.node to >=22; add prettier.config.mjs, tsconfig.json, @types/node; update devDependencies",
         "de": "W5612 behoben: fehlende i18n-Schlüssel hinzugefügt; engines.node auf >=22 aktualisiert; prettier.config.mjs, tsconfig.json, @types/node hinzugefügt; devDependencies aktualisiert",
@@ -93,19 +106,6 @@
         "nl": "Plugins formaat gecorrigeerd in .releaseconfig.json (array in plaats van object)",
         "uk": "Виправлено формат plugins у .releaseconfig.json (масив замість об'єкту)",
         "zh-cn": "修复.releaseconfig.json中plugins格式（数组而非对象）"
-      },
-      "0.3.4": {
-        "en": "Add unit tests for MonitorService, NotificationManager and messages; update README with device links; remove mocha from devDependencies",
-        "de": "Unit-Tests für MonitorService, NotificationManager und messages hinzugefügt; README mit Gerätelinks aktualisiert; mocha aus devDependencies entfernt",
-        "ru": "Добавлены unit-тесты для MonitorService, NotificationManager и messages; обновлён README со ссылками на устройства; удалён mocha из devDependencies",
-        "fr": "Tests unitaires ajoutés pour MonitorService, NotificationManager et messages; README mis à jour avec liens appareils; mocha supprimé des devDependencies",
-        "it": "Aggiunti unit test per MonitorService, NotificationManager e messages; README aggiornato con link dispositivi; rimosso mocha da devDependencies",
-        "es": "Tests unitarios añadidos para MonitorService, NotificationManager y messages; README actualizado con enlaces de dispositivos; mocha eliminado de devDependencies",
-        "pl": "Dodano testy jednostkowe dla MonitorService, NotificationManager i messages; zaktualizowano README z linkami do urządzeń; usunięto mocha z devDependencies",
-        "pt": "Testes unitários adicionados para MonitorService, NotificationManager e messages; README atualizado com links de dispositivos; mocha removido de devDependencies",
-        "nl": "Unit-tests toegevoegd voor MonitorService, NotificationManager en messages; README bijgewerkt met apparaatlinks; mocha verwijderd uit devDependencies",
-        "uk": "Додано unit-тести для MonitorService, NotificationManager та messages; оновлено README з посиланнями на пристрої; видалено mocha з devDependencies",
-        "zh-cn": "为MonitorService、NotificationManager和messages添加单元测试；更新README添加设备链接；从devDependencies中删除mocha"
       }
     },
     "titleLang": {
