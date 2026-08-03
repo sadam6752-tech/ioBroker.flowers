@@ -83,6 +83,11 @@ Only one watering cycle runs at a time per plant. Configure the duration in Sett
 
 ## Changelog
 
+### 0.4.3
+- (sadam6752-tech) Fix W0034: update declared @iobroker/adapter-core range to ^3.4.3
+- (sadam6752-tech) Fix S5601: migrate i18n to short format ({lang}.json)
+- (sadam6752-tech) Fix W1032: trim news to 7 entries
+
 ### 0.4.2
 - (sadam6752-tech) Update @iobroker/adapter-core to 3.4.3
 - (sadam6752-tech) Downgrade @types/node to ^22 (fix W0066)

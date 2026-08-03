@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.4.2",
+    "version": "0.4.3",
     "news": {
+      "0.4.3": {
+        "en": "Fix W0034: update declared @iobroker/adapter-core range to ^3.4.3; migrate i18n to short format ({lang}.json); trim news to 7 entries",
+        "de": "W0034 behoben: deklarierte @iobroker/adapter-core Range auf ^3.4.3 aktualisiert; i18n auf Kurzformat ({lang}.json) migriert; News auf 7 Einträge gekürzt",
+        "ru": "Исправлен W0034: обновлён объявленный диапазон @iobroker/adapter-core до ^3.4.3; миграция i18n на короткий формат ({lang}.json); news сокращены до 7 записей",
+        "fr": "Fix W0034: plage @iobroker/adapter-core déclarée mise à jour vers ^3.4.3; migration i18n vers format court ({lang}.json); news réduit à 7 entrées",
+        "it": "Fix W0034: range @iobroker/adapter-core dichiarato aggiornato a ^3.4.3; migrazione i18n a formato breve ({lang}.json); news ridotte a 7 voci",
+        "es": "Fix W0034: rango @iobroker/adapter-core declarado actualizado a ^3.4.3; migración i18n a formato corto ({lang}.json); news reducidas a 7 entradas",
+        "pl": "Naprawa W0034: zadeklarowany zakres @iobroker/adapter-core zaktualizowano do ^3.4.3; migracja i18n do krótkiego formatu ({lang}.json); news skrócone do 7 wpisów",
+        "pt": "Fix W0034: intervalo @iobroker/adapter-core declarado atualizado para ^3.4.3; migração i18n para formato curto ({lang}.json); news reduzidas a 7 entradas",
+        "nl": "Fix W0034: gedeclareerde @iobroker/adapter-core range bijgewerkt naar ^3.4.3; i18n gemigreerd naar kort formaat ({lang}.json); news ingekort tot 7 items",
+        "uk": "Виправлено W0034: оновлено оголошений діапазон @iobroker/adapter-core до ^3.4.3; міграція i18n на короткий формат ({lang}.json); news скорочено до 7 записів",
+        "zh-cn": "修复W0034：将声明的@iobroker/adapter-core范围更新为^3.4.3；将i18n迁移到短格式（{lang}.json）；news缩减至7条"
+      },
       "0.4.2": {
         "en": "Update @iobroker/adapter-core to 3.4.3; downgrade @types/node to ^22; add @tsconfig/node22 with extends in tsconfig.json; trim old news entries",
         "de": "@iobroker/adapter-core auf 3.4.3 aktualisiert; @types/node auf ^22 heruntergestuft; @tsconfig/node22 mit extends in tsconfig.json hinzugefügt; alte News-Einträge entfernt",
@@ -80,32 +93,6 @@
         "nl": "Fix E8915: dependabot cooldown toegevoegd; CI/CD bijgewerkt naar Node.js 24; overbodige eslint devDependency verwijderd; CHANGELOG_OLD.md toegevoegd",
         "uk": "Виправлення E8915: додано cooldown для dependabot; CI/CD оновлено до Node.js 24; видалено зайву devDependency eslint; додано CHANGELOG_OLD.md",
         "zh-cn": "修复E8915：添加dependabot冷却时间；CI/CD更新至Node.js 24；删除多余的eslint devDependency；添加CHANGELOG_OLD.md"
-      },
-      "0.3.6": {
-        "en": "Fix dependabot config for subdirectories (W8905); add auto-merge.yml for dependabot (S8914)",
-        "de": "Dependabot-Konfiguration für Unterverzeichnisse korrigiert; auto-merge.yml hinzugefügt",
-        "ru": "Исправлена конфигурация dependabot для подкаталогов; добавлен auto-merge.yml",
-        "fr": "Correction config dependabot pour sous-répertoires; ajout auto-merge.yml",
-        "it": "Corretta configurazione dependabot per sottodirectory; aggiunto auto-merge.yml",
-        "es": "Corregida configuración dependabot para subdirectorios; añadido auto-merge.yml",
-        "pl": "Poprawiono konfigurację dependabot dla podkatalogów; dodano auto-merge.yml",
-        "pt": "Corrigida configuração dependabot para subdiretórios; adicionado auto-merge.yml",
-        "nl": "Dependabot configuratie gecorrigeerd voor subdirectories; auto-merge.yml toegevoegd",
-        "uk": "Виправлено конфігурацію dependabot для підкаталогів; додано auto-merge.yml",
-        "zh-cn": "修复dependabot子目录配置；添加auto-merge.yml"
-      },
-      "0.3.5": {
-        "en": "Fix .releaseconfig.json plugins format (array instead of object)",
-        "de": ".releaseconfig.json plugins Format korrigiert (Array statt Objekt)",
-        "ru": "Исправлен формат plugins в .releaseconfig.json (массив вместо объекта)",
-        "fr": "Correction du format plugins dans .releaseconfig.json (tableau au lieu d'objet)",
-        "it": "Corretto formato plugins in .releaseconfig.json (array invece di oggetto)",
-        "es": "Corregido formato plugins en .releaseconfig.json (array en lugar de objeto)",
-        "pl": "Poprawiono format plugins w .releaseconfig.json (tablica zamiast obiektu)",
-        "pt": "Corrigido formato plugins em .releaseconfig.json (array em vez de objeto)",
-        "nl": "Plugins formaat gecorrigeerd in .releaseconfig.json (array in plaats van object)",
-        "uk": "Виправлено формат plugins у .releaseconfig.json (масив замість об'єкту)",
-        "zh-cn": "修复.releaseconfig.json中plugins格式（数组而非对象）"
       }
     },
     "titleLang": {
