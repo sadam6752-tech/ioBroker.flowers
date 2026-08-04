@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.4.3",
+    "version": "0.4.4",
     "news": {
+      "0.4.4": {
+        "en": "Fix S0082: update @tsconfig/node22 devDependency to 22.0.5",
+        "de": "S0082 behoben: @tsconfig/node22 devDependency auf 22.0.5 aktualisiert",
+        "ru": "Исправлен S0082: devDependency @tsconfig/node22 обновлён до 22.0.5",
+        "fr": "Fix S0082: devDependency @tsconfig/node22 mise à jour vers 22.0.5",
+        "it": "Fix S0082: devDependency @tsconfig/node22 aggiornata a 22.0.5",
+        "es": "Fix S0082: devDependency @tsconfig/node22 actualizada a 22.0.5",
+        "pl": "Naprawa S0082: devDependency @tsconfig/node22 zaktualizowana do 22.0.5",
+        "pt": "Fix S0082: devDependency @tsconfig/node22 atualizada para 22.0.5",
+        "nl": "Fix S0082: devDependency @tsconfig/node22 bijgewerkt naar 22.0.5",
+        "uk": "Виправлено S0082: devDependency @tsconfig/node22 оновлено до 22.0.5",
+        "zh-cn": "修复S0082：将@tsconfig/node22开发依赖更新至22.0.5"
+      },
       "0.4.3": {
         "en": "Fix W0034: update declared @iobroker/adapter-core range to ^3.4.3; migrate i18n to short format ({lang}.json); trim news to 7 entries",
         "de": "W0034 behoben: deklarierte @iobroker/adapter-core Range auf ^3.4.3 aktualisiert; i18n auf Kurzformat ({lang}.json) migriert; News auf 7 Einträge gekürzt",
@@ -80,19 +93,6 @@
         "nl": "Auto-opruiming: ioBroker-objecten voor verwijderde planten worden bij adapterstart verwijderd",
         "uk": "Автоочищення: об'єкти ioBroker для видалених з конфігу рослин видаляються при старті адаптера",
         "zh-cn": "自动清理：适配器启动时删除配置中已移除植物的ioBroker对象"
-      },
-      "0.3.7": {
-        "en": "Fix E8915: add dependabot cooldown (default-days: 7); update CI/CD to Node.js 24; remove redundant eslint devDependency; add CHANGELOG_OLD.md",
-        "de": "E8915 behoben: Dependabot-Cooldown hinzugefügt; CI/CD auf Node.js 24 aktualisiert; redundante eslint devDependency entfernt; CHANGELOG_OLD.md hinzugefügt",
-        "ru": "Исправление E8915: добавлен cooldown для dependabot; CI/CD обновлён до Node.js 24; удалена лишняя devDependency eslint; добавлен CHANGELOG_OLD.md",
-        "fr": "Fix E8915: cooldown dependabot ajouté; CI/CD mis à jour vers Node.js 24; devDependency eslint redondante supprimée; CHANGELOG_OLD.md ajouté",
-        "it": "Fix E8915: aggiunto cooldown dependabot; CI/CD aggiornato a Node.js 24; devDependency eslint ridondante rimossa; aggiunto CHANGELOG_OLD.md",
-        "es": "Fix E8915: añadido cooldown dependabot; CI/CD actualizado a Node.js 24; devDependency eslint redundante eliminada; añadido CHANGELOG_OLD.md",
-        "pl": "Naprawa E8915: dodano cooldown dependabot; CI/CD zaktualizowano do Node.js 24; usunięto zbędną devDependency eslint; dodano CHANGELOG_OLD.md",
-        "pt": "Fix E8915: cooldown dependabot adicionado; CI/CD atualizado para Node.js 24; devDependency eslint redundante removida; CHANGELOG_OLD.md adicionado",
-        "nl": "Fix E8915: dependabot cooldown toegevoegd; CI/CD bijgewerkt naar Node.js 24; overbodige eslint devDependency verwijderd; CHANGELOG_OLD.md toegevoegd",
-        "uk": "Виправлення E8915: додано cooldown для dependabot; CI/CD оновлено до Node.js 24; видалено зайву devDependency eslint; додано CHANGELOG_OLD.md",
-        "zh-cn": "修复E8915：添加dependabot冷却时间；CI/CD更新至Node.js 24；删除多余的eslint devDependency；添加CHANGELOG_OLD.md"
       }
     },
     "titleLang": {
