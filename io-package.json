@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.4.4",
+    "version": "0.4.5",
     "news": {
+      "0.4.5": {
+        "en": "Fix S0064: update @alcalzone/release-script-plugin-license to 5.2.2",
+        "de": "S0064 behoben: @alcalzone/release-script-plugin-license auf 5.2.2 aktualisiert",
+        "ru": "Исправлен S0064: @alcalzone/release-script-plugin-license обновлён до 5.2.2",
+        "fr": "Fix S0064: @alcalzone/release-script-plugin-license mis à jour vers 5.2.2",
+        "it": "Fix S0064: @alcalzone/release-script-plugin-license aggiornato a 5.2.2",
+        "es": "Fix S0064: @alcalzone/release-script-plugin-license actualizado a 5.2.2",
+        "pl": "Naprawa S0064: @alcalzone/release-script-plugin-license zaktualizowano do 5.2.2",
+        "pt": "Fix S0064: @alcalzone/release-script-plugin-license atualizado para 5.2.2",
+        "nl": "Fix S0064: @alcalzone/release-script-plugin-license bijgewerkt naar 5.2.2",
+        "uk": "Виправлення S0064: @alcalzone/release-script-plugin-license оновлено до 5.2.2",
+        "zh-cn": "修复S0064：将@alcalzone/release-script-plugin-license更新至5.2.2"
+      },
       "0.4.4": {
         "en": "Fix S0082: update @tsconfig/node22 devDependency to 22.0.5",
         "de": "S0082 behoben: @tsconfig/node22 devDependency auf 22.0.5 aktualisiert",
@@ -80,19 +93,6 @@
         "nl": "Knop-rollen gecorrigeerd: read=false ingesteld voor sendDailyReport en sendWeeklyReport",
         "uk": "Виправлено ролі кнопок: встановлено read=false для sendDailyReport та sendWeeklyReport",
         "zh-cn": "修复按钮状态角色：为sendDailyReport和sendWeeklyReport按钮设置read=false"
-      },
-      "0.3.8": {
-        "en": "Auto-cleanup: remove ioBroker objects for plants deleted from config on adapter start",
-        "de": "Auto-Bereinigung: ioBroker-Objekte für aus der Konfiguration gelöschte Pflanzen werden beim Adapterstart entfernt",
-        "ru": "Автоочистка: объекты ioBroker для удалённых из конфига растений удаляются при старте адаптера",
-        "fr": "Nettoyage automatique: suppression des objets ioBroker pour les plantes supprimées de la config au démarrage",
-        "it": "Pulizia automatica: rimozione oggetti ioBroker per piante eliminate dalla config all'avvio",
-        "es": "Limpieza automática: eliminación de objetos ioBroker para plantas borradas de la config al iniciar",
-        "pl": "Auto-czyszczenie: usuwanie obiektów ioBroker dla roślin usuniętych z konfiguracji przy starcie",
-        "pt": "Limpeza automática: remoção de objetos ioBroker para plantas removidas da config no arranque",
-        "nl": "Auto-opruiming: ioBroker-objecten voor verwijderde planten worden bij adapterstart verwijderd",
-        "uk": "Автоочищення: об'єкти ioBroker для видалених з конфігу рослин видаляються при старті адаптера",
-        "zh-cn": "自动清理：适配器启动时删除配置中已移除植物的ioBroker对象"
       }
     },
     "titleLang": {
