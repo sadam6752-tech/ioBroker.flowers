@@ -7,7 +7,7 @@
     "test": "mocha --exit"
   },
   "dependencies": {
-    "@iobroker/testing": "^5.2.2",
+    "@iobroker/testing": "^6.1.0",
     "mocha": "^11.7.5"
   }
 }
