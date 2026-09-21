@@ -1,5 +1,8 @@
 # Older Changelog
 
+### 0.3.9
+- (sadam6752-tech) Fix button state roles: set read=false for sendDailyReport and sendWeeklyReport buttons
+
 ### 0.3.1 (2026-03-30)
 - (sadam6752-tech) Fixed all lint warnings: complete JSDoc descriptions for all methods
 

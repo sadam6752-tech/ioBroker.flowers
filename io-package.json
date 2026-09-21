@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.4.5",
+    "version": "0.4.6",
     "news": {
+      "0.4.6": {
+        "en": "Repository checker fixes: added the missing README changelog entry for 0.4.5 and the complete MIT license text in the README. CI: Node.js 26 in the test matrix and a new deploy job using npm Trusted Publishing (OIDC) with provenance - releases are published automatically from now on. @iobroker/testing 6.2.x.",
+        "de": "Repository-Checker-Korrekturen: fehlender README-Changelog-Eintrag fuer 0.4.5 und vollstaendiger MIT-Lizenztext im README ergaenzt. CI: Node.js 26 in der Test-Matrix und neuer Deploy-Job mit npm Trusted Publishing (OIDC) samt Provenance - Releases werden ab jetzt automatisch veroeffentlicht. @iobroker/testing 6.2.x.",
+        "ru": "Исправления repository checker: добавлена отсутствующая запись чейнджлога README для 0.4.5 и полный текст лицензии MIT в README. CI: Node.js 26 в тестовой матрице и новый job deploy с npm Trusted Publishing (OIDC) и provenance - релизы теперь публикуются автоматически. @iobroker/testing 6.2.x.",
+        "fr": "Corrections du repository checker : entree de changelog manquante pour 0.4.5 ajoutee dans le README et texte complet de la licence MIT dans le README. CI : Node.js 26 dans la matrice de tests et nouveau job deploy avec npm Trusted Publishing (OIDC) et provenance - les versions sont desormais publiees automatiquement. @iobroker/testing 6.2.x.",
+        "it": "Correzioni del repository checker: aggiunta la voce di changelog mancante per 0.4.5 nel README e il testo completo della licenza MIT nel README. CI: Node.js 26 nella matrice di test e nuovo job deploy con npm Trusted Publishing (OIDC) e provenance - le release vengono ora pubblicate automaticamente. @iobroker/testing 6.2.x.",
+        "es": "Correcciones del repository checker: anadida la entrada de changelog que faltaba para 0.4.5 en el README y el texto completo de la licencia MIT en el README. CI: Node.js 26 en la matriz de pruebas y nuevo job deploy con npm Trusted Publishing (OIDC) y provenance - las versiones ahora se publican automaticamente. @iobroker/testing 6.2.x.",
+        "pl": "Poprawki repository checkera: dodano brakujacy wpis changeloga dla 0.4.5 w README oraz pelny tekst licencji MIT w README. CI: Node.js 26 w macierzy testow i nowy job deploy z npm Trusted Publishing (OIDC) i provenance - wersje sa teraz publikowane automatycznie. @iobroker/testing 6.2.x.",
+        "pt": "Correcoes do repository checker: adicionada a entrada de changelog em falta para 0.4.5 no README e o texto completo da licenca MIT no README. CI: Node.js 26 na matriz de testes e novo job deploy com npm Trusted Publishing (OIDC) e provenance - as versoes passam a ser publicadas automaticamente. @iobroker/testing 6.2.x.",
+        "nl": "Repository-checker-correcties: ontbrekende changelog-regel voor 0.4.5 toegevoegd in de README en volledige MIT-licentietekst in de README. CI: Node.js 26 in de testmatrix en nieuwe deploy-job met npm Trusted Publishing (OIDC) en provenance - releases worden nu automatisch gepubliceerd. @iobroker/testing 6.2.x.",
+        "uk": "Виправлення repository checker: додано відсутній запис журналу змін для 0.4.5 у README та повний текст ліцензії MIT у README. CI: Node.js 26 у тестовій матриці та новий job deploy із npm Trusted Publishing (OIDC) і provenance - релізи тепер публікуються автоматично. @iobroker/testing 6.2.x.",
+        "zh-cn": "仓库检查修复：在 README 中补充了 0.4.5 缺失的变更日志条目以及完整的 MIT 许可证文本。CI：将 Node.js 26 加入测试矩阵，并新增使用 npm Trusted Publishing (OIDC) 的 deploy 作业（含 provenance），此后版本将自动发布。@iobroker/testing 6.2.x。"
+      },
       "0.4.5": {
         "en": "Fix S0064: update @alcalzone/release-script-plugin-license to 5.2.2",
         "de": "S0064 behoben: @alcalzone/release-script-plugin-license auf 5.2.2 aktualisiert",
@@ -80,19 +93,6 @@
         "nl": "Objecthiërarchie gecorrigeerd: plants-container gewijzigd van channel naar folder om device-kinderen toe te staan",
         "uk": "Виправлено ієрархію об'єктів: контейнер plants змінено з channel на folder для підтримки дочірніх device",
         "zh-cn": "修复对象层次结构：将plants容器从channel类型改为folder类型以允许device子对象"
-      },
-      "0.3.9": {
-        "en": "Fix button state roles: set read=false for sendDailyReport and sendWeeklyReport buttons",
-        "de": "Button-Rollen korrigiert: read=false für sendDailyReport und sendWeeklyReport gesetzt",
-        "ru": "Исправлены роли кнопок: установлен read=false для sendDailyReport и sendWeeklyReport",
-        "fr": "Correction rôles boutons: read=false défini pour sendDailyReport et sendWeeklyReport",
-        "it": "Corretti ruoli pulsanti: impostato read=false per sendDailyReport e sendWeeklyReport",
-        "es": "Corrección roles botones: read=false establecido para sendDailyReport y sendWeeklyReport",
-        "pl": "Poprawiono role przycisków: ustawiono read=false dla sendDailyReport i sendWeeklyReport",
-        "pt": "Correção roles botões: read=false definido para sendDailyReport e sendWeeklyReport",
-        "nl": "Knop-rollen gecorrigeerd: read=false ingesteld voor sendDailyReport en sendWeeklyReport",
-        "uk": "Виправлено ролі кнопок: встановлено read=false для sendDailyReport та sendWeeklyReport",
-        "zh-cn": "修复按钮状态角色：为sendDailyReport和sendWeeklyReport按钮设置read=false"
       }
     },
     "titleLang": {
