@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.4.6",
+    "version": "0.4.7",
     "news": {
+      "0.4.7": {
+        "en": "Fix W0037: update @iobroker/testing to 6.3.0.",
+        "de": "W0037 behoben: @iobroker/testing auf 6.3.0 aktualisiert.",
+        "ru": "Исправлен W0037: @iobroker/testing обновлён до 6.3.0.",
+        "fr": "Fix W0037 : @iobroker/testing mis a jour vers 6.3.0.",
+        "it": "Fix W0037: @iobroker/testing aggiornato a 6.3.0.",
+        "es": "Fix W0037: @iobroker/testing actualizado a 6.3.0.",
+        "pl": "Naprawa W0037: @iobroker/testing zaktualizowano do 6.3.0.",
+        "pt": "Fix W0037: @iobroker/testing atualizado para 6.3.0.",
+        "nl": "Fix W0037: @iobroker/testing bijgewerkt naar 6.3.0.",
+        "uk": "Виправлення W0037: @iobroker/testing оновлено до 6.3.0.",
+        "zh-cn": "修复W0037：将@iobroker/testing更新到6.3.0。"
+      },
       "0.4.6": {
         "en": "Repository checker fixes: added the missing README changelog entry for 0.4.5 and the complete MIT license text in the README. CI: Node.js 26 in the test matrix and a new deploy job using npm Trusted Publishing (OIDC) with provenance - releases are published automatically from now on. @iobroker/testing 6.2.x.",
         "de": "Repository-Checker-Korrekturen: fehlender README-Changelog-Eintrag fuer 0.4.5 und vollstaendiger MIT-Lizenztext im README ergaenzt. CI: Node.js 26 in der Test-Matrix und neuer Deploy-Job mit npm Trusted Publishing (OIDC) samt Provenance - Releases werden ab jetzt automatisch veroeffentlicht. @iobroker/testing 6.2.x.",
