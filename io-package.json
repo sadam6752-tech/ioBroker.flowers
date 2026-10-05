@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "flowers",
-    "version": "0.4.7",
+    "version": "0.4.8",
     "news": {
+      "0.4.8": {
+        "en": "Fix W1032: reduce common.news to the latest 7 entries.",
+        "de": "W1032 behoben: common.news auf die letzten 7 Eintraege reduziert.",
+        "ru": "Исправлен W1032: common.news сокращён до последних 7 записей.",
+        "fr": "Fix W1032 : common.news reduit aux 7 dernieres entrees.",
+        "it": "Fix W1032: common.news ridotto agli ultimi 7 elementi.",
+        "es": "Fix W1032: common.news reducido a las ultimas 7 entradas.",
+        "pl": "Naprawa W1032: common.news ograniczono do 7 ostatnich wpisow.",
+        "pt": "Fix W1032: common.news reduzido para as ultimas 7 entradas.",
+        "nl": "Fix W1032: common.news beperkt tot de laatste 7 items.",
+        "uk": "Виправлення W1032: common.news скорочено до останніх 7 записів.",
+        "zh-cn": "修复W1032：将common.news减少到最近7条。"
+      },
       "0.4.7": {
         "en": "Fix W0037: update @iobroker/testing to 6.3.0.",
         "de": "W0037 behoben: @iobroker/testing auf 6.3.0 aktualisiert.",
@@ -80,32 +93,6 @@
         "nl": "@iobroker/adapter-core bijgewerkt naar 3.4.3; @types/node teruggebracht naar ^22; @tsconfig/node22 met extends toegevoegd in tsconfig.json; oude nieuws-items verwijderd",
         "uk": "Оновлено @iobroker/adapter-core до 3.4.3; @types/node знижено до ^22; додано @tsconfig/node22 з extends у tsconfig.json; видалено старі записи news",
         "zh-cn": "更新@iobroker/adapter-core至3.4.3；将@types/node降级至^22；在tsconfig.json中添加@tsconfig/node22和extends；删除旧的news条目"
-      },
-      "0.4.1": {
-        "en": "Fix W5612: add missing i18n keys; update engines.node to >=22; add prettier.config.mjs, tsconfig.json, @types/node; update devDependencies",
-        "de": "W5612 behoben: fehlende i18n-Schlüssel hinzugefügt; engines.node auf >=22 aktualisiert; prettier.config.mjs, tsconfig.json, @types/node hinzugefügt; devDependencies aktualisiert",
-        "ru": "Исправление W5612: добавлены отсутствующие ключи i18n; engines.node обновлён до >=22; добавлены prettier.config.mjs, tsconfig.json, @types/node; обновлены devDependencies",
-        "fr": "Fix W5612: clés i18n manquantes ajoutées; engines.node mis à jour à >=22; prettier.config.mjs, tsconfig.json, @types/node ajoutés; devDependencies mis à jour",
-        "it": "Fix W5612: chiavi i18n mancanti aggiunti; engines.node aggiornato a >=22; prettier.config.mjs, tsconfig.json, @types/node aggiunti; devDependencies aggiornati",
-        "es": "Fix W5612: claves i18n faltantes añadidas; engines.node actualizado a >=22; prettier.config.mjs, tsconfig.json, @types/node añadidos; devDependencies actualizados",
-        "pl": "Naprawa W5612: dodano brakujące klucze i18n; engines.node zaktualizowano do >=22; dodano prettier.config.mjs, tsconfig.json, @types/node; zaktualizowano devDependencies",
-        "pt": "Fix W5612: chaves i18n em falta adicionadas; engines.node atualizado para >=22; prettier.config.mjs, tsconfig.json, @types/node adicionados; devDependencies atualizados",
-        "nl": "Fix W5612: ontbrekende i18n-sleutels toegevoegd; engines.node bijgewerkt naar >=22; prettier.config.mjs, tsconfig.json, @types/node toegevoegd; devDependencies bijgewerkt",
-        "uk": "Виправлення W5612: додано відсутні ключі i18n; engines.node оновлено до >=22; додано prettier.config.mjs, tsconfig.json, @types/node; оновлено devDependencies",
-        "zh-cn": "修复W5612：添加缺失的i18n键；将engines.node更新为>=22；添加prettier.config.mjs、tsconfig.json、@types/node；更新devDependencies"
-      },
-      "0.4.0": {
-        "en": "Fix object hierarchy: change plants container from channel to folder type to allow device children",
-        "de": "Objekthierarchie korrigiert: plants-Container von channel auf folder geändert, damit device-Kinder erlaubt sind",
-        "ru": "Исправлена иерархия объектов: контейнер plants изменён с channel на folder для поддержки дочерних device",
-        "fr": "Correction hiérarchie objets: conteneur plants changé de channel à folder pour autoriser les enfants device",
-        "it": "Corretta gerarchia oggetti: contenitore plants cambiato da channel a folder per consentire figli device",
-        "es": "Corrección jerarquía objetos: contenedor plants cambiado de channel a folder para permitir hijos device",
-        "pl": "Poprawiono hierarchię obiektów: kontener plants zmieniony z channel na folder, aby umożliwić dzieci device",
-        "pt": "Correção hierarquia objetos: contentor plants alterado de channel para folder para permitir filhos device",
-        "nl": "Objecthiërarchie gecorrigeerd: plants-container gewijzigd van channel naar folder om device-kinderen toe te staan",
-        "uk": "Виправлено ієрархію об'єктів: контейнер plants змінено з channel на folder для підтримки дочірніх device",
-        "zh-cn": "修复对象层次结构：将plants容器从channel类型改为folder类型以允许device子对象"
       }
     },
     "titleLang": {
